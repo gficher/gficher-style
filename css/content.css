@@ -1,0 +1,257 @@
+#content {
+	position: absolute;
+	left: 250px;
+	top: 60px;
+	height: calc(100% - 75px);
+	width: calc(100% - 250px);
+	background: #FFF;
+	background: #E9E9E9;
+	overflow-y: scroll;
+	overflow-x: auto;
+	padding-bottom: 15px;
+	-webkit-overflow-scrolling: touch;
+}
+
+#content #ptitle {
+	width: 100%;
+	height: 80px;
+	background: #E9E9E9;
+	border-bottom: 1px solid #DFDFDF;
+}
+
+#content #ptitle #picon {
+	height: 36px;
+	width: 36px;
+	line-height: 36px;
+	margin-top: 25px;
+	margin-left: 25px;
+	display: inline-block;
+	float: left;
+
+	font-family: 'FontAwesome';
+	font-size: 50px;
+}
+
+#content #ptitle #picon:after {
+	content: '\f015';
+}
+
+#content #ptitle #pttext {
+	margin-top: 20px;
+	margin-left: 25px;
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+	font-family: 'Open Sans';
+	font-size: 36px;
+	color: #222;
+}
+
+#content .gs-cbigbox {
+	width: calc(100% - 60px);
+	margin: auto;
+	margin-left: 15px;
+	margin-top: 30px;
+	border: 1px lightgray solid;
+	border-radius: 5px;
+	padding: 15px;
+	background: #FFF;
+	font-family: 'Open Sans';
+	display: inline-block;
+}
+
+#content .gs-cbigbox + .gs-cbigbox {
+	margin-top: 20px;
+}
+
+#content .gs-cbigbox .gs-btitle {
+	font-size: 30px;
+	border-bottom: 1px solid lightgray;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+#content .gs-cbigbox .gs-bsubtitle {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+#content .gs-cbigbox.tilebox {
+	padding: 0;
+	display: table;
+	width: calc(100% - 30px);
+}
+
+#content .gs-cbigbox.tilebox .gs-tile {
+	height: 100px;
+	width: 1%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	background: #EEE;
+	color: #29273F;
+}
+
+#content .gs-cbigbox.tilebox.big {
+	height: 130px;
+}
+
+
+#content .gs-cbigbox.tilebox .gs-tile .gs-info {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#content .gs-cbigbox.tilebox .gs-tile .gs-info.success {
+	color: #569A58;
+}
+
+#content .gs-cbigbox.tilebox .gs-tile .gs-info.warning {
+	color: #BBA839;
+}
+
+#content .gs-cbigbox.tilebox .gs-tile .gs-info.danger {
+	color: #D75557;
+}
+
+#content .gs-cbigbox.tilebox .gs-tile + .gs-tile {
+	border-left: 1px lightgray solid;
+}
+
+.gs-hr {
+	border: 0;
+	background: #CCC;
+	height: 1px;
+	width: 100%;
+}
+
+.gs-hr.invisible {
+	height: 0;
+}
+
+.progressbar {
+	height: 20px;
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.progressbar .pbprogress {
+	background: #569A58;
+	border-radius: 5px;
+	height: 20px;
+	width: 0;
+
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	color: #000;
+	transition: .3s;
+}
+
+table.gs-table {
+	width: 100%;
+	font-family: 'Open Sans';
+	border-collapse: collapse;
+}
+
+table.gs-table th {
+	text-align: left;
+	height: 40px;
+	border-bottom: 2px solid #CCC;
+}
+
+table.gs-table th:first-child {
+	padding-left: 10px;
+}
+
+table.gs-table th:last-child {
+	padding-right: 10px;
+}
+
+table.gs-table td {
+	border-bottom: 1px solid #CCC;
+	height: 40px;
+}
+
+table.gs-table td:first-child {
+	padding-left: 10px;
+}
+
+table.gs-table td:last-child {
+	padding-right: 10px;
+}
+
+table.gs-table tbody tr:nth-child(odd) {
+	background: #EEE;
+}
+
+table.gs-table tbody tr:hover {
+	background: #DFDEEB;
+}
+
+table.gs-table td a {
+	text-decoration: none;
+	color: #625E9B;
+}
+
+.gs-tpager {
+	display: inline-block;
+	margin-top: 7px;
+}
+
+.gs-tpager .gs-pnumber {
+	background: #FFF;
+	border: 1px solid #29273F;
+	color: #29273F;
+	border-radius: 5px;
+	padding: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	outline: none;
+	font-family: 'Open Sans';
+	transition: .2s;
+}
+
+.gs-tpager .gs-pnumber:hover {
+	cursor: pointer;
+	background: #29273F;
+	color: #FFF;
+}
+
+.gs-tpager .gs-pnumber + .gs-pnumber {
+	margin-left: 5px;
+}
+
+.gs-tpager .gs-pnumber.active {
+	background: #29273F;
+	color: #FFF;
+}
+
+.gs-infolist {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.gs-infolist li {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid lightgray;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+}
+
+.gs-infolist li:nth-child(odd) {
+	background-color: #EEE;
+}
+
+.gs-infolist li b {
+	color: #444;
+}

@@ -1,0 +1,29 @@
+.gs-messagebox {
+	width: calc(100% - 60px);
+	margin: auto;
+	margin-top: 5px;
+	border: 1px #387592 solid;
+	border-radius: 5px;
+	padding: 15px;
+	background: #D4E5EE;
+	font-family: 'Open Sans';
+	color: #387592;
+}
+
+.gs-messagebox.gs-success {
+	border-color: #569A58;
+	color: #569A58;
+	background: #D7E8D7;
+}
+
+.gs-messagebox.gs-warning {
+	border-color: #BBA839;
+	color: #BBA839;
+	background: #F1ECD0;
+}
+
+.gs-messagebox.gs-danger {
+	border-color: #D75557;
+	color: #D75557;
+	background: #F7DDDC;
+}

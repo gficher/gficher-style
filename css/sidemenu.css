@@ -1,0 +1,72 @@
+.gs-sidemenu {
+	position: absolute;
+	left: 0;
+	top: 60px;
+	height: calc(100% - 60px);
+	width: 250px;
+	background: #1E1E1E;
+	overflow: hidden;
+	transition: .2s;
+}
+
+.gs-sidemenu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.gs-sidemenu ul li {
+	height: 55px;
+	border-bottom: 1px solid #333;
+}
+
+.gs-sidemenu ul li a {
+	color: #666;
+	text-decoration: none;
+	height: 55px;
+	line-height: 55px;
+	display: block;
+	padding-left: 30px;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	transition: .2s;
+	background-size: 20px;
+	font-weight: bold;
+}
+
+.gs-sidemenu ul li a.icon:before {
+	font-family: 'FontAwesome';
+	font-size: 25px;
+	margin-right: 20px;
+	font-weight: normal;
+}
+
+.gs-sidemenu ul li a.home:before {
+	content: '\f015';
+}
+
+.gs-sidemenu ul li a.user:before {
+	content: '\f007';
+}
+
+.gs-sidemenu ul li a.test:before {
+	content: '\f0f6';
+}
+
+.gs-sidemenu ul li a.calendar:before {
+	content: '\f073';
+}
+
+.gs-sidemenu ul li a.newspaper:before {
+	content: '\f1ea';
+}
+
+.gs-sidemenu ul li a.book:before {
+	content: '\f02d';
+}
+
+.gs-sidemenu ul li a:hover {
+	background-color: #3B3B3B;
+	padding-left: 40px;
+	color: #FFF;
+}
