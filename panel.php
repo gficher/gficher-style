@@ -41,6 +41,10 @@ $var = 1; // Define o menu
 					<div class="gs-info">30/08/2015</div>
 				</div>
 				<div class="gs-tile">
+					<div>Turma</div>
+					<div class="gs-info">SQNOT</div>
+				</div>
+				<div class="gs-tile">
 					<div>Pesquisas</div>
 					<div class="gs-info success">OK</div>
 				</div>
