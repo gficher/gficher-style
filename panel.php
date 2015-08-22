@@ -30,10 +30,10 @@ $var = 1; // Define o menu
 				<div id="pttext">Página inicial</div>
 			</div>
 
-			<div class="gs-messagebox"><b>Info:</b> O arquivo foi salvo corretamente</div>
+			<div class="gs-messagebox"><b>Info:</b> O arquivo foi salvo</div>
 			<div class="gs-messagebox gs-success"><b>Sucesso!</b> O arquivo foi salvo corretamente</div>
-			<div class="gs-messagebox gs-warning"><b>Alerta!</b> O arquivo foi salvo corretamente</div>
-			<div class="gs-messagebox gs-danger"><b>Erro!</b> O arquivo foi salvo corretamente</div>
+			<div class="gs-messagebox gs-warning"><b>Alerta!</b> O arquivo foi salvo corretamente com um erro</div>
+			<div class="gs-messagebox gs-danger"><b>Erro!</b> O arquivo não foi salvo corretamente</div>
 
 			<div class="gs-cbigbox tilebox big">
 				<div class="gs-tile">
