@@ -1,6 +1,7 @@
 <?php
 if (isset($var)) {
 ?>
+<div id="gs-menuicon"></div>
 <div id="gs-logo"></div>
 <a id="gs-logoff" href="#"></a>
 <div id="gs-userinfo">

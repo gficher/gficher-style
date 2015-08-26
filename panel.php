@@ -10,6 +10,7 @@ $var = 1; // Define o menu
 		<meta name="Author" content="gficher"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
@@ -32,7 +33,7 @@ $var = 1; // Define o menu
 
 			<div class="gs-messagebox"><b>Info:</b> O arquivo foi salvo</div>
 			<div class="gs-messagebox gs-success"><b>Sucesso!</b> O arquivo foi salvo corretamente</div>
-			<div class="gs-messagebox gs-warning"><b>Alerta!</b> O arquivo foi salvo corretamente com um erro</div>
+			<div class="gs-messagebox gs-warning"><b>Alerta!</b> O arquivo foi salvo com um erro</div>
 			<div class="gs-messagebox gs-danger"><b>Erro!</b> O arquivo não foi salvo corretamente</div>
 
 			<div class="gs-cbigbox tilebox big">
@@ -231,7 +232,7 @@ for ($i = 0; $i < 10; $i++) {
 					<label class="gs-flabel">
 						<b>Subdomínio</b>
 						<div class="gs-prefix">
-							<span class="gs-prefix-text left">http://</span><input class="gs-ftext gs-withpre both" type="text" name="username" id="username"><span class="gs-prefix-text right">.gficher.tk</span>
+							<span class="gs-prefix-text left">http://</span><input class="gs-ftext gs-withpre both small" type="text" name="username" id="username"><span class="gs-prefix-text right">.gficher.tk</span>
 						</div>
 					</label>
 

@@ -80,6 +80,7 @@
 #content .gs-cbigbox.tilebox {
 	padding: 0;
 	display: table;
+	
 	width: calc(100% - 30px);
 }
 
@@ -254,4 +255,72 @@ table.gs-table td a {
 
 .gs-infolist li b {
 	color: #444;
+}
+
+@media (max-width: 600px) {
+	#content #box {
+		width: 95%;
+	}
+	
+	.gs-sidemenu {
+		width: 0;
+	}
+
+	#content {
+		left: 0;
+		width: 100%;
+	}
+	
+	#gs-menuicon {
+		display: block;
+	}
+	
+	.gs-topbar #gs-userinfo, .gs-topbar #gs-logoff {
+		display: none;
+	}
+	
+	#content .gs-cbigbox.tilebox {
+		/width: 100%;
+	}
+	
+	#content .gs-cbigbox.tilebox .gs-tile {
+		display: block;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: 60px;
+		display: block;
+	}
+	
+	#content .gs-cbigbox.tilebox .gs-tile + .gs-tile {
+		border-top: 1px solid lightgray;
+		border-left: 0;
+	}
+	
+	.gs-table, .gs-table thead, .gs-table tbody, .gs-table th, .gs-table td, .gs-table tr { 
+		display: block; 
+	}
+	
+	
+	
+	.gs-flabel {
+		width: calc(100% - 20px);
+	}
+	
+	.gs-ftext.medium {
+		width: 100%;
+	}
+
+	.gs-ftext.big {
+		width: 100%;
+	}
+
+	.gs-ftext.giant {
+		width: 100%;
+	}
+	
+	.gs-textarea {
+		min-width: calc(100% - 10px);
+		max-width: calc(100% - 10px);
+	}
 }
