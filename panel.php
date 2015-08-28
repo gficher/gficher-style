@@ -10,7 +10,7 @@ $var = 1; // Define o menu
 		<meta name="Author" content="gficher"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
@@ -26,6 +26,7 @@ $var = 1; // Define o menu
 			<?php include_once('includes/menu.php'); ?>
 		</div>
 		<div id="content">
+			<div id="gs-menuoverlay"></div>
 			<div id="ptitle">
 				<div id="picon"></div>
 				<div id="pttext">Página inicial</div>
@@ -300,8 +301,13 @@ for ($i = 0; $i < 10; $i++) {
 
 					<hr class="gs-hr">
 
-					<input class="gs-ftext gs-fuser-icon" class="fusername" type="text" name="username" id="username" placeholder="Usuário">
-					<input class="gs-ftext gs-fpass-icon icon" class="fpassword" type="password" name="password" id="password" placeholder="Senha">
+					<label class="gs-flabel">
+						<input class="gs-ftext gs-fuser-icon" class="fusername" type="text" name="username" id="username" placeholder="Usuário">
+					</label>
+					<label class="gs-flabel">
+						<input class="gs-ftext gs-fpass-icon" class="fpassword" type="password" name="password" id="password" placeholder="Senha">
+					</label>
+					
 
 					<hr class="gs-hr">
 
@@ -337,7 +343,16 @@ for ($i = 0; $i < 10; $i++) {
 							</optgroup>
 						</select>
 					</label>
-					<label class="gs-flabel success">
+					<label class="gs-flabel success nobreak autosize">
+						<select class="gs-fselect" name="select" id="select">
+							<option value="a" selected="selected">A</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="d">D</option>
+							<option value="e">E</option>
+						</select>
+					</label>
+					<label class="gs-flabel warning nobreak">
 						<select class="gs-fselect gs-autosize" name="select" id="select">
 							<option value="a" selected="selected">A</option>
 							<option value="b">B</option>
@@ -346,16 +361,7 @@ for ($i = 0; $i < 10; $i++) {
 							<option value="e">E</option>
 						</select>
 					</label>
-					<label class="gs-flabel warning">
-						<select class="gs-fselect gs-autosize" name="select" id="select">
-							<option value="a" selected="selected">A</option>
-							<option value="b">B</option>
-							<option value="c">C</option>
-							<option value="d">D</option>
-							<option value="e">E</option>
-						</select>
-					</label>
-					<label class="gs-flabel danger">
+					<label class="gs-flabel danger nobreak">
 						<select class="gs-fselect gs-autosize" name="select" id="select">
 							<option value="a" selected="selected">A</option>
 							<option value="b">B</option>

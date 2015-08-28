@@ -1,3 +1,17 @@
+html, body {
+	overflow: hidden;
+}
+
+#gs-menuoverlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,.7);
+	display: none;
+	transition: .3s;
+	z-index: 999;
+}
+
 #content {
 	position: absolute;
 	left: 250px;
@@ -10,6 +24,7 @@
 	overflow-x: auto;
 	padding-bottom: 15px;
 	-webkit-overflow-scrolling: touch;
+	transition: .3s;
 }
 
 #content #ptitle {
@@ -240,7 +255,7 @@ table.gs-table td a {
 }
 
 .gs-infolist li {
-	height: 40px;
+	min-height: 40px;
 	line-height: 40px;
 	border-bottom: 1px solid lightgray;
 	list-style: none;
@@ -257,13 +272,15 @@ table.gs-table td a {
 	color: #444;
 }
 
-@media (max-width: 600px) {
+/* MOBILE */
+
+@media (max-width: 800px) {
 	#content #box {
 		width: 95%;
 	}
 	
 	.gs-sidemenu {
-		width: 0;
+		/**/
 	}
 
 	#content {
@@ -277,6 +294,11 @@ table.gs-table td a {
 	
 	.gs-topbar #gs-userinfo, .gs-topbar #gs-logoff {
 		display: none;
+	}
+	
+	.gs-topbar #gs-logo {
+		width: calc(100% - 130px);
+		margin: auto;
 	}
 	
 	#content .gs-cbigbox.tilebox {
@@ -301,14 +323,40 @@ table.gs-table td a {
 		display: block; 
 	}
 	
-	
+	.gs-fselect, .gs-fselect.gs-autosize {
+		/width: calc(100% + 20px);
+		display: table-cell;
+	}
 	
 	.gs-flabel {
 		width: calc(100% - 20px);
+		margin-top: 10px;
+		display: block;
+	}
+	
+	.gs-flabel.nobreak {
+		width: inherit;
+		display: inline-block;
+	}
+	
+	.gs-ftext {
+		width: 100%;
+	}
+	
+	.gs-ftext.gs-fuser-icon, .gs-ftext.gs-fpass-icon {
+		width: calc(100% - 25px);
+	}
+	
+	.gs-ftext.tiny {
+		width: 10%;
+	}
+	
+	.gs-ftext.small {
+		width: 40%;
 	}
 	
 	.gs-ftext.medium {
-		width: 100%;
+		width: 70%;
 	}
 
 	.gs-ftext.big {
@@ -322,5 +370,19 @@ table.gs-table td a {
 	.gs-textarea {
 		min-width: calc(100% - 10px);
 		max-width: calc(100% - 10px);
+	}
+	
+	.gs-ftext + .gs-ftext {
+		margin-top: 10px;
+	}
+	
+	.gs-btn {
+		width: 100%;
+		height: 30px;
+		margin-top: 10px;
+	}
+	
+	.gs-table {
+		/
 	}
 }

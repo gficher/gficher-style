@@ -28,17 +28,17 @@ $(".gs-table").each(function () {
 	var currentPage = 0;
 	var numPerPage = 7;
 	var $table = $(this);
-	
+
 	$table.bind('repaginate', function () {
 		$table.find('tbody tr').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
 	});
-	
+
 	$table.trigger('repaginate');
 	var numRows = $table.find('tbody tr').length;
 	var numPages = Math.ceil(numRows / numPerPage);
 	var $pager = $('#' + $(this).attr('data-tpager'));
-	
-	
+
+
 	for (var page = 0; page < numPages; page++) {
 		$('<span class="gs-pnumber"></span>').text(page + 1).bind('click', {
 			newPage: page
@@ -54,4 +54,36 @@ $(".gs-table").each(function () {
 
 $(".gs-pnumber").click(function (){
 	$("#" + $("[data-tpager='" + $(this).closest("div").attr("id") + "']").attr("data-tsearch")).val("");
+});
+
+var menuStatus = false;
+
+$("#gs-menuicon").click(function (){
+	if (menuStatus == true) {
+		$("#content").css('left','0px');
+		$("#gs-menuoverlay").css('display','none');
+		menuStatus = false;
+	} else {
+		$("#content").css('left','250px');
+		$("#gs-menuoverlay").css('display','inherit');
+		menuStatus = true;
+	}
+});
+
+$("#gs-menuoverlay").click(function (){
+	if ($("#gs-menuicon").css("display") == "block") {
+		$("#content").css('left','0px');
+		$("#gs-menuoverlay").css('display','none');
+		menuStatus = false;
+	}
+});
+
+$(window).resize(function() {
+	if ($("#gs-menuicon").css("display") == "none") {
+		$("#content").css('left','250px');
+		$("#gs-menuoverlay").css('display','none');
+	} else {
+		$("#content").css('left','0px');
+		$("#gs-menuoverlay").css('display','none');
+	}
 });
