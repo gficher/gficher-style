@@ -180,8 +180,8 @@ select::-ms-expand {
 	display: none;
 }
 
-.gs-fselect.gs-autosize {
-	width: inherit;
+.gs-fselect.autosize {
+	width: auto;
 }
 
 .gs-btn {

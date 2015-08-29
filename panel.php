@@ -25,6 +25,7 @@ $var = 1; // Define o menu
 		<div id="sidemenu" class="gs-sidemenu">
 			<?php include_once('includes/menu.php'); ?>
 		</div>
+		
 		<div id="content">
 			<div id="gs-menuoverlay"></div>
 			<div id="ptitle">
@@ -68,13 +69,13 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
-
+			<a name="top"></a>
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de tabela</div>
 
 				<div id="pager1" class="gs-tpager"></div>
 				<input class="gs-ftext" type="text" name="username" id="tsearch1" placeholder="Pesquisar" data-action="tsearch" style="float: right;">
-
+				
 				<table id="table1" class="gs-table" data-tpager="pager1" data-tsearch="tsearch1">
 					<thead>
 						<tr>
@@ -310,7 +311,7 @@ for ($i = 0; $i < 10; $i++) {
 					
 
 					<hr class="gs-hr">
-
+					
 					<label class="gs-flabel">
 						<b>Alternativa</b>
 						<select class="gs-fselect" name="select" id="select">
@@ -329,7 +330,7 @@ for ($i = 0; $i < 10; $i++) {
 					</label>
 					<label class="gs-flabel">
 						<b>Alternativa 2</b>
-						<select class="gs-fselect gs-autosize" name="select" id="select">
+						<select class="gs-fselect autosize" name="select" id="select">
 							<optgroup label="Letras">
 								<option value="a" selected="selected">A</option>
 								<option value="b">B</option>
@@ -343,8 +344,8 @@ for ($i = 0; $i < 10; $i++) {
 							</optgroup>
 						</select>
 					</label>
-					<label class="gs-flabel success nobreak autosize">
-						<select class="gs-fselect" name="select" id="select">
+					<label class="gs-flabel success nobreak">
+						<select class="gs-fselect autosize" name="select" id="select">
 							<option value="a" selected="selected">A</option>
 							<option value="b">B</option>
 							<option value="c">C</option>
@@ -353,7 +354,7 @@ for ($i = 0; $i < 10; $i++) {
 						</select>
 					</label>
 					<label class="gs-flabel warning nobreak">
-						<select class="gs-fselect gs-autosize" name="select" id="select">
+						<select class="gs-fselect autosize" name="select" id="select">
 							<option value="a" selected="selected">A</option>
 							<option value="b">B</option>
 							<option value="c">C</option>
@@ -362,12 +363,22 @@ for ($i = 0; $i < 10; $i++) {
 						</select>
 					</label>
 					<label class="gs-flabel danger nobreak">
-						<select class="gs-fselect gs-autosize" name="select" id="select">
+						<select class="gs-fselect autosize" name="select" id="select">
 							<option value="a" selected="selected">A</option>
 							<option value="b">B</option>
 							<option value="c">C</option>
 							<option value="d">D</option>
 							<option value="e">E</option>
+						</select>
+					</label>
+					<label class="gs-flabel">
+						<b>Teste</b>
+						<select class="gs-fselect autosize" name="select" id="select">
+							<option value="a" selected="selected">Anta</option>
+							<option value="b">Batata</option>
+							<option value="c">Canja</option>
+							<option value="d">Dado</option>
+							<option value="e">Elefante</option>
 						</select>
 					</label>
 

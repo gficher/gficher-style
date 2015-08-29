@@ -1,15 +1,21 @@
 html, body {
 	overflow: hidden;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 #gs-menuoverlay {
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0,0,0,.7);
 	display: none;
 	transition: .3s;
 	z-index: 999;
+	//opacity: 0;
 }
 
 #content {
@@ -323,9 +329,13 @@ table.gs-table td a {
 		display: block; 
 	}
 	
-	.gs-fselect, .gs-fselect.gs-autosize {
-		/width: calc(100% + 20px);
+	.gs-fselect {
+		width: calc(100% + 20px);
 		display: table-cell;
+	}
+	
+	.gs-fselect.autosize {
+		width: auto;
 	}
 	
 	.gs-flabel {
@@ -383,6 +393,51 @@ table.gs-table td a {
 	}
 	
 	.gs-table {
-		/
+		margin-top: 20px;
+	}
+	
+	.gs-table thead tr {
+		position: absolute;
+		left: -999999;
+		top: -9999999;
+		display: none;
+	}
+	
+	.gs-table tbody tr {
+		padding-left: 0px;
+	}
+	
+	.gs-table tbody tr + tr {
+		margin-top: 10px;
+	}
+	
+	.gs-table tbody tr td {
+		padding-left: 10px;
+		height: 30px;
+		padding-top: 10px;
+	}
+	
+	.gs-table tbody tr td:first-child {
+		background: #CCC;
+		padding-top: 10px;
+		height: 30px;
+	}
+	
+	.gs-tpager {
+		float: none;
+	}
+	
+	[data-action="tsearch"] {
+		width: 30%;
+		float: none;
+	}
+	
+	.ags-flabel .gs-prefix {
+		width: calc(100%);
+	}
+	
+	.ags-flabel .gs-prefix .small {
+		width: 100%;
+		width: inherit;
 	}
 }
