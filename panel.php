@@ -69,12 +69,12 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
-			<a name="top"></a>
+
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de tabela</div>
 
+				<input class="gs-ftext" type="text" name="username" id="tsearch1" placeholder="Pesquisar" data-action="tsearch">
 				<div id="pager1" class="gs-tpager"></div>
-				<input class="gs-ftext" type="text" name="username" id="tsearch1" placeholder="Pesquisar" data-action="tsearch" style="float: right;">
 				
 				<table id="table1" class="gs-table" data-tpager="pager1" data-tsearch="tsearch1">
 					<thead>
@@ -117,7 +117,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 						</tr>
 						<?php
-for ($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < 1; $i++) {
 	echo '
 						<tr>
 							<td><a href="" title="">Eu criei tudo isso aqui</a></td>
@@ -154,11 +154,11 @@ for ($i = 0; $i < 10; $i++) {
 					</tbody>
 				</table>
 			</div>
-
+			<a name="top"></a>
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de gráfico</div>
 				<div class="canv">
-					<canvas class="graph" id="graphCadastros" height="50"></canvas>
+					<canvas class="graph" id="graphCadastros" height="10"></canvas>
 				</div>
 			</div>
 
@@ -234,7 +234,7 @@ for ($i = 0; $i < 10; $i++) {
 					<label class="gs-flabel">
 						<b>Subdomínio</b>
 						<div class="gs-prefix">
-							<span class="gs-prefix-text left">http://</span><input class="gs-ftext gs-withpre both small" type="text" name="username" id="username"><span class="gs-prefix-text right">.gficher.tk</span>
+							<span class="gs-prefix-text left">http://</span><input class="gs-ftext gs-withpre both" type="text" name="username" id="username"><span class="gs-prefix-text right">.gficher.tk</span>
 						</div>
 					</label>
 

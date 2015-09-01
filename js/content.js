@@ -24,7 +24,7 @@ $("[data-action='tsearch']").keyup(function () {
 	}
 });
 
-$(".gs-table").each(function () {
+$(".ags-table").each(function () {
 	var currentPage = 0;
 	var numPerPage = 7;
 	var $table = $(this);
@@ -95,7 +95,20 @@ $(window).resize(function() {
 	menuStatus = true;
 	$("#gs-menuicon").click();
 	$("#gs-menuoverlay").css('display','none');
+	
+	
+	if ($("#gs-menuicon").css("display") == "block") {
+		$(".graph").attr("height","100");
+	} else {
+		$(".graph").attr("height","30");
+	}
 });
+
+if ($("#gs-menuicon").css("display") == "block") {
+	$(".graph").attr("height","100");
+} else {
+	$(".graph").attr("height","50");
+}
 
 $(document).delegate('.gs-topbar', 'touchmove', false);
 $(document).delegate('#sidemenu', 'touchmove', false);

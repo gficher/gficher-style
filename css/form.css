@@ -33,17 +33,6 @@
 
 .gs-ftext:disabled {
 	background: #DDD;
-	border: 1px solid #AAA;
-	border-radius: 5px;
-	height: 25px;
-	width: 200px;
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	outline: none;
-	font-family: 'Open Sans';
-	font-size: 14px;
-	-webkit-appearance: none;
 }
 
 .gs-ftext.gs-fuser-icon {
