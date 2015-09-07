@@ -35,9 +35,9 @@ $var = 1; // Define o menu
 			</div>
 
 			<div class="gs-messagebox"><b>Info:</b> O arquivo foi salvo</div>
-			<div class="gs-messagebox gs-success"><b>Sucesso!</b> O arquivo foi salvo corretamente</div>
-			<div class="gs-messagebox gs-warning"><b>Alerta!</b> O arquivo foi salvo com um erro</div>
-			<div class="gs-messagebox gs-danger"><b>Erro!</b> O arquivo não foi salvo corretamente</div>
+			<div class="gs-messagebox success"><b>Sucesso!</b> O arquivo foi salvo corretamente</div>
+			<div class="gs-messagebox warning"><b>Alerta!</b> O arquivo foi salvo mas possui erros</div>
+			<div class="gs-messagebox danger"><b>Erro!</b> O arquivo não foi salvo.</div>
 
 			<div class="gs-cbigbox tilebox big">
 				<div class="gs-tile">
@@ -71,7 +71,6 @@ $var = 1; // Define o menu
 				O texto pode ser continuado aqui
 			</div>
 			
-			<a name="top"></a>
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Barra de progresso<div class="gs-bsubtitle">Com animação :)</div></div>
 				<div class="progressbar"><div class="pbprogress" data-value="25" id="pb01"></div></div>
@@ -95,50 +94,79 @@ $var = 1; // Define o menu
 							<th>Enviado por</th>
 							<th>Prioridade</th>
 							<th>Data</th>
+							<th>Opções</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><a href="" title="">Eu criei tudo isso aqui</a></td>
+							<td><a href="" title="">Matioli S2</a></td>
 							<td>Gustavo Ficher</td>
 							<td>Alta</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
 							<td><a href="" title="">Manda nudes, gatinha</a></td>
 							<td>Rafael Guerreiro</td>
 							<td>Urgente</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
-							<td><a href="" title="">To marombando</a></td>
+							<td><a href="" title="">To marombando, já volto...</a></td>
 							<td>Rafael Bonin</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
-							<td><a href="" title="">PoRRRta</a></td>
+							<td><a href="" title="">Eu falo poRRRta</a></td>
 							<td>Marília Lup</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
 							<td><a href="" title="">Não sou Felipe</a></td>
 							<td>Luana Felipe</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
-							<td><a href="" title="">Gosto do Shift</a></td>
+							<td><a href="" title="">Shift, Shift, Shift!</a></td>
 							<td>Luca Morais</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
 							<td><a href="" title="">Amo SENAI</a></td>
 							<td>Rafael Guerra</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<?php
 for ($i = 0; $i < 0; $i++) {
@@ -178,7 +206,7 @@ for ($i = 0; $i < 0; $i++) {
 					</tbody>
 				</table>
 			</div>
-			<a name="top"></a>
+			
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de gráfico</div>
 				<div class="canv">
