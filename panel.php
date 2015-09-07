@@ -16,6 +16,7 @@ $var = 1; // Define o menu
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
 		<link href='css/sidemenu.css' rel='stylesheet' type='text/css'>
 		<link href='css/content.css' rel='stylesheet' type='text/css'>
+		<link href='css/pikaday.css' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -25,7 +26,7 @@ $var = 1; // Define o menu
 		<div id="sidemenu" class="gs-sidemenu">
 			<?php include_once('includes/menu.php'); ?>
 		</div>
-		
+
 		<div id="content">
 			<div id="gs-menuoverlay"></div>
 			<div id="ptitle">
@@ -69,13 +70,24 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
+			
+			<a name="top"></a>
+			<div class="gs-cbigbox">
+				<div class="gs-btitle">Barra de progresso<div class="gs-bsubtitle">Com animação :)</div></div>
+				<div class="progressbar"><div class="pbprogress" data-value="25" id="pb01"></div></div>
+				<input class="gs-btn delete" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb01" data-value="0">
+				<input class="gs-btn" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb01" data-value="25">
+				<input class="gs-btn warning" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb01" data-value="50">
+				<input class="gs-btn" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb01" data-value="75">
+				<input class="gs-btn success" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb01" data-value="100">
+			</div>
 
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de tabela</div>
 
 				<input class="gs-ftext" type="text" name="username" id="tsearch1" placeholder="Pesquisar" data-action="tsearch">
 				<div id="pager1" class="gs-tpager"></div>
-				
+
 				<table id="table1" class="gs-table" data-tpager="pager1" data-tsearch="tsearch1">
 					<thead>
 						<tr>
@@ -116,8 +128,20 @@ $var = 1; // Define o menu
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
 						</tr>
+						<tr>
+							<td><a href="" title="">Gosto do Shift</a></td>
+							<td>Luca Morais</td>
+							<td>Normal</td>
+							<td>21/04/1999 às 03:00 PM</td>
+						</tr>
+						<tr>
+							<td><a href="" title="">Amo SENAI</a></td>
+							<td>Rafael Guerra</td>
+							<td>Normal</td>
+							<td>21/04/1999 às 03:00 PM</td>
+						</tr>
 						<?php
-for ($i = 0; $i < 1; $i++) {
+for ($i = 0; $i < 0; $i++) {
 	echo '
 						<tr>
 							<td><a href="" title="">Eu criei tudo isso aqui</a></td>
@@ -166,6 +190,13 @@ for ($i = 0; $i < 1; $i++) {
 				<div class="gs-btitle">Teste de formulário</div>
 				<form name="form1" method="post" action="">
 
+					<label class="gs-flabel">
+						<b>Data</b>
+						<input class="gs-ftext" type="text" name="fdata" id="fdata" placeholder="dd/mm/yyyy">
+					</label>
+					
+					<hr class="gs-hr">
+					
 					<label class="gs-flabel">
 						<b>Título</b>
 						<input class="gs-ftext" type="text" name="username" id="username">
@@ -235,6 +266,12 @@ for ($i = 0; $i < 1; $i++) {
 						<b>Subdomínio</b>
 						<div class="gs-prefix">
 							<span class="gs-prefix-text left">http://</span><input class="gs-ftext gs-withpre both" type="text" name="username" id="username"><span class="gs-prefix-text right">.gficher.tk</span>
+						</div>
+					</label>
+					<label class="gs-flabel">
+						<b>Subdomínio</b>
+						<div class="gs-prefix">
+							<input class="gs-ftext gs-withpre right" type="text" name="username" id="username"><span class="gs-prefix-text right">batatas</span>
 						</div>
 					</label>
 
@@ -308,10 +345,10 @@ for ($i = 0; $i < 1; $i++) {
 					<label class="gs-flabel">
 						<input class="gs-ftext gs-fpass-icon" class="fpassword" type="password" name="password" id="password" placeholder="Senha">
 					</label>
-					
+
 
 					<hr class="gs-hr">
-					
+
 					<label class="gs-flabel">
 						<b>Alternativa</b>
 						<select class="gs-fselect" name="select" id="select">
@@ -452,7 +489,9 @@ for ($i = 0; $i < 1; $i++) {
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/content.js"></script>
 		<script type="text/javascript" src="js/chart.min.js"></script>
-		<script type="text/javascript" >
+		<script type="text/javascript" src="js/moment.js"></script>
+		<script type="text/javascript" src="js/pikaday.js"></script>
+		<script type="text/javascript">
 			var cadastrosData = {
 				labels : ['Simulado 1','Simulado 2','Simulado 3','Simulado 4','Simulado 5','Simulado 6','Simulado 7'],
 				datasets : [
@@ -488,6 +527,11 @@ for ($i = 0; $i < 1; $i++) {
 				});
 				window.location = '#top';
 			}
+			
+			var picker = new Pikaday({
+				field: $('#fdata')[0],
+				format: 'DD/MM/YYYY',
+			});
 		</script>
 	</body>
 </html>

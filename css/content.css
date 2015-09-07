@@ -30,7 +30,7 @@ html, body {
 	overflow-x: auto;
 	padding-bottom: 15px;
 	-webkit-overflow-scrolling: touch;
-	transition: .3s;
+	//transition: .3s;
 }
 
 #content #ptitle {
@@ -158,6 +158,8 @@ html, body {
 	border: 1px solid #CCC;
 	border-radius: 5px;
 	padding: 2px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .progressbar .pbprogress {
@@ -222,6 +224,10 @@ table.gs-table td a {
 
 [data-action="tsearch"] {
 	float: right;
+	display: block;
+	padding-left: 35px;
+	background: #FFF url(../img/fa-search.png) no-repeat 10px;
+	background-size: 18px;
 }
 
 .gs-tpager {
@@ -335,7 +341,7 @@ table.gs-table td a {
 	}
 	
 	.gs-fselect {
-		width: calc(100% + 20px);
+		width: calc(100% - 0px);
 		display: table-cell;
 	}
 	
@@ -344,7 +350,7 @@ table.gs-table td a {
 	}
 	
 	.gs-flabel {
-		width: calc(100% - 20px);
+		width: calc(100% - 0px);
 		margin-top: 10px;
 		display: block;
 	}
@@ -355,11 +361,11 @@ table.gs-table td a {
 	}
 	
 	.gs-ftext {
-		width: 100%;
+		width: calc(100% - 20px);
 	}
 	
 	.gs-ftext.gs-fuser-icon, .gs-ftext.gs-fpass-icon {
-		width: calc(100% - 25px);
+		width: calc(100% - 45px);
 	}
 	
 	.gs-ftext.tiny {
@@ -375,16 +381,16 @@ table.gs-table td a {
 	}
 
 	.gs-ftext.big {
-		width: 100%;
+		width: calc(100% - 20px);
 	}
 
 	.gs-ftext.giant {
-		width: 100%;
+		width: calc(100% - 20px);
 	}
 	
 	.gs-textarea {
-		min-width: calc(100% - 10px);
-		max-width: calc(100% - 10px);
+		min-width: calc(100% - 25px);
+		max-width: calc(100% - 25px);
 	}
 	
 	.gs-ftext + .gs-ftext {
@@ -435,13 +441,21 @@ table.gs-table td a {
 	}
 	
 	[data-action="tsearch"] {
-		width: calc(100% - 20px);
+		width: calc(100% - 50px);
 		float: none;
-		display: block;
 	}
 	
 	.gs-flabel .gs-prefix {
-		width: calc(100%);
+		width: calc(100% - 5px);
+	}
+	
+	.gs-flabel .gs-prefix .gs-ftext {
+		width: inherit;
+	}
+	
+	.gs-prefix-text {
+		display: inline;
+		width: inherit;
 	}
 	
 	.ags-flabel .gs-prefix .small {
