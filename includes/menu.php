@@ -36,6 +36,27 @@ if (isset($var))
 	<li>
 		<a href="#" class="icon newspaper">Minhas Notas</a>
 	</li>
+	<li class="separator">
+		<a class="icon user">Teste de overflow</a>
+	</li>
+	<li>
+		<a href="#" class="icon book">Meu Caderno</a>
+	</li>
+	<li>
+		<a href="#" class="icon newspaper">Minhas Notas</a>
+	</li>
+	<li>
+		<a href="#" class="icon book">Meu Caderno</a>
+	</li>
+	<li>
+		<a href="#" class="icon newspaper">Minhas Notas</a>
+	</li>
+	<li>
+		<a href="#" class="icon book">Meu Caderno</a>
+	</li>
+	<li>
+		<a href="#" class="icon newspaper">Minhas Notas</a>
+	</li>
 </ul>
 <?php
 } else if ($var == 2) {

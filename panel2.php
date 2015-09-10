@@ -5,7 +5,7 @@ $var = 1; // Define o menu
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Página Inicial</title>
+		<title>Painel 2</title>
 		<link rel="icon" href="favicon.ico"/>
 		<meta name="Author" content="gficher"/>
 		<meta name="description" content=""/>
@@ -28,10 +28,9 @@ $var = 1; // Define o menu
 		</div>
 
 		<div id="content">
-			<div id="gs-menuoverlay"></div>
 			<div id="ptitle">
 				<div id="picon"></div>
-				<div id="pttext">Página inicial</div>
+				<div id="pttext">Pré visualização</div>
 			</div>
 
 			<div class="gs-messagebox"><b>Bem-vindo ao Oficina do Aluno web!</b><br>Sistema: gficher's style v1 Alpha.<br>Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
@@ -54,15 +53,15 @@ $var = 1; // Define o menu
 					<div class="gs-info warning">Na média</div>
 				</div>
 			</div>
-
-			<div class="gs-cbigbox">
+			
+			<div class="gs-cbigbox half">
 				<div class="gs-btitle">Seu desempenho<div class="gs-bsubtitle">Notas dos simulados comparado à média geral</div></div>
-				<div class="canv">
-					<canvas class="graph" id="graphCadastros" height="10"></canvas>
+				<div class="gs-canv">
+					<canvas class="gs-graph" id="graphCadastros" height="100"></canvas>
 				</div>
 			</div>
 			
-			<div class="gs-cbigbox">
+			<div class="gs-cbigbox half">
 				<div class="gs-btitle">Próximos eventos</div>
 				<table id="table1" class="gs-table" data-tpager="pager1" data-tsearch="tsearch1">
 					<thead>
@@ -78,12 +77,16 @@ $var = 1; // Define o menu
 						</tr>
 						<tr>
 							<td>09/09/2015</td>
-							<td>Lançamento do iOS 9 para iPhone 4S e superior</td>
+							<td>WWDC 2015</td>
+						</tr>
+						<tr>
+							<td>09/09/2015</td>
+							<td>Simulado 6</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-
+			
 		</div>
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/content.js"></script>
@@ -124,7 +127,8 @@ $var = 1; // Define o menu
 					responsive: true,
 					multiTooltipTemplate: "<%=datasetLabel%>: <%= value %>",
 				});
-				window.location = '#top';
+				
+				//window.location = '#top';
 			}
 		</script>
 	</body>

@@ -19,8 +19,8 @@
 			<div id="box">
 				<div id="logo"></div>
 				<form name="form-login" method="post" action="">
-					<input class="gs-ftext gs-fuser-icon" type="text" name="user" id="user" placeholder="Usuário">
-					<input class="gs-ftext gs-fpass-icon" type="password" name="pass" id="pass" placeholder="Senha">
+					<input class="gs-ftext fuser" type="text" name="user" id="user" placeholder="Usuário">
+					<input class="gs-ftext fpass" type="password" name="pass" id="pass" placeholder="Senha">
 					<input class="gs-btn success" type="submit" name="button" id="button" value="Entrar">
 				</form>
 				<?php if (isset($_POST['button'])) { ?><div id="errorbox">Usuário ou senha incorreta!</div><?php } ?>

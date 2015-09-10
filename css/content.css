@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html, body {
 	overflow: hidden;
 	max-width: 100%;
@@ -5,6 +7,18 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #666;
 }
 
 #gs-menuoverlay {
@@ -15,7 +29,6 @@ html, body {
 	display: none;
 	transition: .3s;
 	z-index: 999;
-	//opacity: 0;
 }
 
 #content {
@@ -24,19 +37,16 @@ html, body {
 	top: 60px;
 	height: calc(100% - 75px);
 	width: calc(100% - 250px);
-	background: #FFF;
-	background: #E9E9E9;
+	background: #EEE;
 	overflow-y: scroll;
 	overflow-x: auto;
 	padding-bottom: 15px;
 	-webkit-overflow-scrolling: touch;
-	//transition: .3s;
 }
 
 #content #ptitle {
 	width: 100%;
 	height: 80px;
-	background: #E9E9E9;
 	border-bottom: 1px solid #DFDFDF;
 }
 
@@ -66,6 +76,7 @@ html, body {
 	font-family: 'Open Sans';
 	font-size: 36px;
 	color: #222;
+	width: calc(100% - 100px);
 }
 
 #content .gs-cbigbox {
@@ -73,14 +84,27 @@ html, body {
 	margin: auto;
 	margin-left: 15px;
 	margin-top: 20px;
-	border: 1px lightgray solid;
-	border-top: 4px lightgray solid;
+	border: 1px #BBB solid;
+	border-top: 4px #BBB solid;
 	border-radius: 3px;
 	padding: 15px;
 	padding-top: 5px;
 	background: #FFF;
 	font-family: 'Open Sans';
 	display: inline-block;
+	float: left;
+}
+
+#content .gs-cbigbox.twothird {
+	width: calc(66% - 50px);
+}
+
+#content .gs-cbigbox.half {
+	width: calc(50% - 55px);
+}
+
+#content .gs-cbigbox.third {
+	width: calc(33% - 45px);
 }
 
 #content .gs-cbigbox + .gs-cbigbox {
@@ -89,7 +113,7 @@ html, body {
 
 #content .gs-cbigbox .gs-btitle {
 	font-size: 30px;
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid #BBB;
 	font-weight: bold;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
@@ -128,19 +152,19 @@ html, body {
 }
 
 #content .gs-cbigbox.tilebox .gs-tile .gs-info.success {
-	color: #569A58;
+	color: #00A65A;
 }
 
 #content .gs-cbigbox.tilebox .gs-tile .gs-info.warning {
-	color: #BBA839;
+	color: #F39C12;
 }
 
 #content .gs-cbigbox.tilebox .gs-tile .gs-info.danger {
-	color: #D75557;
+	color: #DD4B39;
 }
 
 #content .gs-cbigbox.tilebox .gs-tile + .gs-tile {
-	border-left: 1px lightgray solid;
+	border-left: 1px #BBB solid;
 }
 
 .gs-hr {
@@ -154,12 +178,18 @@ html, body {
 	height: 0;
 }
 
+.gs-hr.blockbreak {
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
 .progressbar {
 	height: 20px;
 	background: #EEE;
 	border: 1px solid #CCC;
 	border-radius: 3px;
-	padding: 2px;
+	padding: 0px;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -167,7 +197,7 @@ html, body {
 .progressbar .pbprogress {
 	background: #569A58;
 	border-radius: 3px;
-	height: 20px;
+	height: 100%;
 	width: 0;
 
 	font-family: 'Open Sans';
@@ -176,6 +206,14 @@ html, body {
 	text-align: center;
 	color: #000;
 	transition: .3s;
+}
+
+.progressbar.small {
+	height: 10px;
+}
+
+.progressbar.gib {
+	height: 40px;
 }
 
 table.gs-table {
@@ -277,7 +315,7 @@ table.gs-table td a {
 .gs-infolist li {
 	min-height: 40px;
 	line-height: 40px;
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid #BBB;
 	list-style: none;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -292,6 +330,14 @@ table.gs-table td a {
 	color: #444;
 }
 
+.gs-canv {
+	width: 100%;
+}
+
+.gs-graph {
+	max-width: 100%;
+}
+
 /* MOBILE */                                                                                               /* MOBILE */
 
 @media (max-width: 800px) {
@@ -300,7 +346,11 @@ table.gs-table td a {
 	}
 	
 	.gs-sidemenu {
-		/**/
+		width: 100%;
+		height: calc(100% - 60px);
+		left: -100%;
+		top: 60px;
+		position: fixed;
 	}
 
 	#content {
@@ -321,8 +371,13 @@ table.gs-table td a {
 		margin: auto;
 	}
 	
+	#content .gs-cbigbox.half {
+		width: calc(100% - 60px);
+	}
+
+	
 	#content .gs-cbigbox.tilebox {
-		/width: 100%;
+		/**/
 	}
 	
 	#content .gs-cbigbox.tilebox .gs-tile {
@@ -335,7 +390,7 @@ table.gs-table td a {
 	}
 	
 	#content .gs-cbigbox.tilebox .gs-tile + .gs-tile {
-		border-top: 1px solid lightgray;
+		border-top: 1px solid #BBB;
 		border-left: 0;
 	}
 	
@@ -407,6 +462,10 @@ table.gs-table td a {
 		font-size: 18px;
 	}
 	
+	.gs-btn.autosize {
+		width: auto;
+	}
+	
 	.gs-table {
 		margin-top: 10px;
 		display: block;
@@ -422,7 +481,7 @@ table.gs-table td a {
 	}
 	
 	.gs-table tbody tr + tr {
-		margin-top: 10px;
+		margin-top: 5px;
 	}
 	
 	.gs-table tbody tr td {
@@ -434,8 +493,6 @@ table.gs-table td a {
 	
 	.gs-table tbody tr td:first-child {
 		background: #CCC;
-		padding-top: 10px;
-		height: 30px;
 	}
 	
 	.gs-tpager {

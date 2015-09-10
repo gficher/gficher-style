@@ -1,3 +1,14 @@
+@charset "utf-8";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
 #content {
 	background: #AAA url(../img/bg.jpg);
 	background-size: cover;
@@ -18,13 +29,15 @@
 	margin: auto;
 
 	width: 300px;
-	min-height: 300px;
+	min-height: 260px;
 	background: #29273F;
 	box-shadow: 0px 0px 10px #888;
 
-	border: 1px #141320 solid;
-	border-radius: 5px;
+	border-top: 4px #141320 solid;
+	border-radius: 3px;
 	transition: .2s;
+	
+	padding-bottom: 10px;
 }
 
 #content #box #logo {
@@ -65,16 +78,17 @@
 }
 
 #content #box #forgotpass {
-	color: white;
+	color: #FFF;
 	display: block;
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	transition: .1s;
 }
 
 #content #box #forgotpass:hover {
-	color: lightgray;
+	color: #BBB;
 }
 
 #fright {

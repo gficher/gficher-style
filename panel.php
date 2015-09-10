@@ -27,11 +27,25 @@ $var = 1; // Define o menu
 			<?php include_once('includes/menu.php'); ?>
 		</div>
 
+		<div class="gs-modal-fade"></div>
+		<div class="gs-modal-content" data-mname="modal1">
+			<div class="gs-modal-header">
+				<button type="button" class="gs-modal-close"></button>
+				<span class="gs-modal-title">Teste de Modal</span>
+			</div>
+			<div class="gs-modal-body">
+				<p>Texto do modal aqui.</p>
+			</div>
+			<div class="gs-modal-footer">
+				<button type="button" class="gs-btn">Fechar</button>
+				<button type="button" class="gs-btn success">Salvar</button>
+			</div>
+		</div>
+
 		<div id="content">
-			<div id="gs-menuoverlay"></div>
 			<div id="ptitle">
 				<div id="picon"></div>
-				<div id="pttext">Página inicial</div>
+				<div id="pttext">Cartilha geral</div>
 			</div>
 
 			<div class="gs-messagebox"><b>Info:</b> O arquivo foi salvo</div>
@@ -59,6 +73,14 @@ $var = 1; // Define o menu
 			</div>	
 
 			<div class="gs-cbigbox">
+				<div class="gs-btitle">Blocos de alerta<div class="gs-bsubtitle">Criados por um gatilho</div></div>
+				<input class="gs-btn" type="submit" name="button" id="button" value="Normal">
+				<input class="gs-btn delete" type="submit" name="button" id="button" value="Danger">
+				<input class="gs-btn warning" type="submit" name="button" id="button" value="Warning">
+				<input class="gs-btn success" type="submit" name="button" id="button" value="Success">
+			</div>
+
+			<div class="gs-cbigbox">
 				<div class="gs-btitle">Informações<div class="gs-bsubtitle">Informações básicas para acesso</div></div>
 				Texto antes da lista
 				<ul class="gs-infolist">
@@ -70,15 +92,30 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
-			
+
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Barra de progresso<div class="gs-bsubtitle">Com animação :)</div></div>
-				<div class="progressbar"><div class="pbprogress" data-value="25" id="pb01"></div></div>
-				<input class="gs-btn delete" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb01" data-value="0">
-				<input class="gs-btn" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb01" data-value="25">
-				<input class="gs-btn warning" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb01" data-value="50">
-				<input class="gs-btn" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb01" data-value="75">
-				<input class="gs-btn success" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb01" data-value="100">
+				<div class="progressbar small"><div class="pbprogress" data-value="25" id="pb01"></div></div>
+				<div class="progressbar"><div class="pbprogress" data-value="25" id="pb02"></div></div>
+				<div class="progressbar big"><div class="pbprogress" data-value="25" id="pb03"></div></div>
+
+				<input class="gs-btn delete small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb01" data-value="0">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb01" data-value="25">
+				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb01" data-value="50">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb01" data-value="75">
+				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb01" data-value="100">
+				<hr class="gs-hr invisible">
+				<input class="gs-btn delete small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb02" data-value="0">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb02" data-value="25">
+				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb02" data-value="50">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb02" data-value="75">
+				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb02" data-value="100">
+				<hr class="gs-hr invisible">
+				<input class="gs-btn delete small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb03" data-value="0">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb03" data-value="25">
+				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb03" data-value="50">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb03" data-value="75">
+				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb03" data-value="100">
 			</div>
 
 			<div class="gs-cbigbox">
@@ -206,12 +243,10 @@ for ($i = 0; $i < 0; $i++) {
 					</tbody>
 				</table>
 			</div>
-			
+
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de gráfico</div>
-				<div class="canv">
-					<canvas class="graph" id="graphCadastros" height="10"></canvas>
-				</div>
+				<canvas class="gs-graph" id="graphCadastros" height="50"></canvas>
 			</div>
 
 			<div class="gs-cbigbox">
@@ -222,9 +257,9 @@ for ($i = 0; $i < 0; $i++) {
 						<b>Data</b>
 						<input class="gs-ftext" type="text" name="fdata" id="fdata" placeholder="dd/mm/yyyy">
 					</label>
-					
+
 					<hr class="gs-hr">
-					
+
 					<label class="gs-flabel">
 						<b>Título</b>
 						<input class="gs-ftext" type="text" name="username" id="username">
@@ -239,7 +274,7 @@ for ($i = 0; $i < 0; $i++) {
 								<option value="3">Teste do nome do Edit</option>
 							</optgroup>
 							<optgroup label="Teste 2">
-								<option value="4" selected="selected">Teste</option>
+								<option value="4">Teste</option>
 								<option value="5">Batata</option>
 								<option value="6">Teste do nome do Edit</option>
 							</optgroup>
@@ -255,7 +290,7 @@ for ($i = 0; $i < 0; $i++) {
 								<option value="3">Teste do nome do Edit</option>
 							</optgroup>
 							<optgroup label="Teste 2">
-								<option value="4" selected="selected">Teste</option>
+								<option value="4">Teste</option>
 								<option value="5">Batata</option>
 								<option value="6">Teste do nome do Edit</option>
 							</optgroup>
@@ -368,10 +403,10 @@ for ($i = 0; $i < 0; $i++) {
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
-						<input class="gs-ftext gs-fuser-icon" class="fusername" type="text" name="username" id="username" placeholder="Usuário">
+						<input class="gs-ftext fuser" type="text" name="username" id="username" placeholder="Usuário">
 					</label>
 					<label class="gs-flabel">
-						<input class="gs-ftext gs-fpass-icon" class="fpassword" type="password" name="password" id="password" placeholder="Senha">
+						<input class="gs-ftext fpass" type="password" name="password" id="password" placeholder="Senha">
 					</label>
 
 
@@ -388,7 +423,7 @@ for ($i = 0; $i < 0; $i++) {
 								<option value="e">E</option>
 							</optgroup>
 							<optgroup label="Opções">
-								<option value="r" selected="selected">Rasurada</option>
+								<option value="r">Rasurada</option>
 								<option value="v">Em branco</option>
 							</optgroup>
 						</select>
@@ -404,7 +439,7 @@ for ($i = 0; $i < 0; $i++) {
 								<option value="e">E</option>
 							</optgroup>
 							<optgroup label="Opções">
-								<option value="r" selected="selected">Rasurada</option>
+								<option value="r">Rasurada</option>
 								<option value="v">Em branco</option>
 							</optgroup>
 						</select>
@@ -514,11 +549,11 @@ for ($i = 0; $i < 0; $i++) {
 				Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
 			</div>
 		</div>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/content.js"></script>
-		<script type="text/javascript" src="js/chart.min.js"></script>
-		<script type="text/javascript" src="js/moment.js"></script>
-		<script type="text/javascript" src="js/pikaday.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/content.js"></script>
+		<script src="js/chart.min.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/pikaday.js"></script>
 		<script type="text/javascript">
 			var cadastrosData = {
 				labels : ['Simulado 1','Simulado 2','Simulado 3','Simulado 4','Simulado 5','Simulado 6','Simulado 7'],
@@ -553,13 +588,15 @@ for ($i = 0; $i < 0; $i++) {
 					responsive: true,
 					multiTooltipTemplate: "<%=datasetLabel%>: <%= value %>",
 				});
-				window.location = '#top';
+
+				//window.location = '#top';
 			}
-			
+
 			var picker = new Pikaday({
 				field: $('#fdata')[0],
 				format: 'DD/MM/YYYY',
 			});
+
 		</script>
 	</body>
 </html>

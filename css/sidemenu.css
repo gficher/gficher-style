@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .gs-sidemenu {
 	position: absolute;
 	left: 0;
@@ -5,8 +7,10 @@
 	height: calc(100% - 60px);
 	width: 250px;
 	background: #1E1E1E;
-	overflow: hidden;
-	//transition: .2s;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	z-index: 5;
+	transition: .3s;
 }
 
 .gs-sidemenu ul {

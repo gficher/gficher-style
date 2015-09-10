@@ -35,13 +35,13 @@
 	background: #DDD;
 }
 
-.gs-ftext.gs-fuser-icon {
+.gs-ftext.fuser {
 	background: #FFF url(../img/fa-user.png) no-repeat 10px;
 	padding-left: 35px;
 	background-size: 18px;
 }
 
-.gs-ftext.gs-fpass-icon {
+.gs-ftext.fpass {
 	background: #FFF url(../img/fa-lock.png) no-repeat 10px;
 	padding-left: 35px;
 	background-size: 18px;
@@ -119,33 +119,33 @@
 }
 
 .gs-flabel.success {
-	color: #569A58;
+	color: #00A65A;
 }
 
 .gs-flabel.success .gs-ftext,
 .gs-flabel.success .gs-fselect,
 .gs-flabel.success .gs-textarea {
-	border-color: #569A58;
+	border-color: #00A65A;
 }
 
 .gs-flabel.warning {
-	color: #BBA839;
+	color: #F39C12;
 }
 
 .gs-flabel.warning .gs-ftext,
 .gs-flabel.warning .gs-fselect,
 .gs-flabel.warning .gs-textarea {
-	border-color: #BBA839;
+	border-color: #F39C12;
 }
 
 .gs-flabel.danger {
-	color: #D75557;
+	color: #DD4B39;
 }
 
 .gs-flabel.danger .gs-ftext,
 .gs-flabel.danger .gs-fselect,
 .gs-flabel.danger .gs-textarea {
-	border-color: #D75557;
+	border-color: #DD4B39;
 }
 
 .gs-fselect {
@@ -164,7 +164,6 @@
 	-o-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
-	appearance: none;
 }
 
 select::-ms-expand {
@@ -176,9 +175,9 @@ select::-ms-expand {
 }
 
 .gs-btn {
-	background: #FFF;
-	border: 1px solid #29273F;
-	color: #29273F;
+	background: #29273F;
+	border: 1px solid #1A1827;
+	color: #FFF;
 	border-radius: 3px;
 	height: 35px;
 	padding-left: 10px;
@@ -192,39 +191,45 @@ select::-ms-expand {
 
 .gs-btn:hover {
 	cursor: pointer;
-	background: #29273F;
-	color: #FFF;
+	background: #1A1827;
 }
 
 .gs-btn.delete {
-	color: #F00;
-	border-color: #D75557;
+	background: #DD4B39;
+	border-color: #D73925;
 }
 
 .gs-btn.delete:hover {
-	background: #D75557;
-	color: #FFF;
+	background: #D73925;
 }
 
 .gs-btn.warning {
-	color: #BBA839;
-	border-color: #BBA839;
+	background: #F39C12;
+	border-color: #E08E0B;
 }
 
 .gs-btn.warning:hover {
-	background: #BBA839;
-	color: #FFF;
+	background: #E08E0B;
 }
 
 .gs-btn.success {
-	color: #569A58;
+	background: #00A65A;
 	border-color: #569A58;
 }
 
 .gs-btn.success:hover {
 	background: #569A58;
-	color: #FFF;
 }
+
+.gs-btn.success {
+	border-color: #008D4C;
+	background: #449D44;
+}
+
+.gs-btn.success:hover {
+	background: #008D4C;
+}
+
 
 .gs-btn.tiny {
 	height: 20px;

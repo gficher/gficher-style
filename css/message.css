@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .gs-messagebox {
 	width: calc(100% - 60px);
 	margin: auto;
@@ -42,4 +44,34 @@
 
 .gs-messagebox.danger a {
 	color: #D75557;
+}
+
+/* LAYOUT V2.1 */
+
+.gs-messagebox {
+	background: #3C8DBC;
+	color: #FFF;
+	border-color: #245471;
+}
+
+.gs-messagebox.success {
+	background: #00A65A;
+	color: #FFF;
+	border-color: #00552F;
+}
+
+.gs-messagebox.warning {
+	background: #F39C12;
+	color: #FFF;
+	border-color: #8E5B06;
+}
+
+.gs-messagebox.danger {
+	background: #DD4B39;
+	color: #FFF;
+	border-color: #812116;
+}
+
+.gs-messagebox a {
+	color: #FFF;
 }
