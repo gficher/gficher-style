@@ -21,16 +21,6 @@ html, body {
 	background: #666;
 }
 
-#gs-menuoverlay {
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	background-color: rgba(0,0,0,.7);
-	display: none;
-	transition: .3s;
-	z-index: 999;
-}
-
 #content {
 	position: absolute;
 	left: 250px;
@@ -196,7 +186,7 @@ html, body {
 
 .progressbar .pbprogress {
 	background: #569A58;
-	border-radius: 3px;
+	border-radius: 0px;
 	height: 100%;
 	width: 0;
 
@@ -209,11 +199,11 @@ html, body {
 }
 
 .progressbar.small {
-	height: 10px;
+	height: 5px;
 }
 
-.progressbar.gib {
-	height: 40px;
+.progressbar.big {
+	height: 30px;
 }
 
 table.gs-table {
@@ -522,5 +512,10 @@ table.gs-table td a {
 	.ags-flabel .gs-prefix .small {
 		width: 100%;
 		width: inherit;
+	}
+	
+	.gs-modal-content {
+		width: 100%;
+		width: calc(100% - 20px);
 	}
 }

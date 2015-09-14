@@ -27,20 +27,119 @@ $var = 1; // Define o menu
 			<?php include_once('includes/menu.php'); ?>
 		</div>
 
-		<div class="gs-modal-fade"></div>
-		<div class="gs-modal-content" data-mname="modal1">
-			<div class="gs-modal-header">
-				<button type="button" class="gs-modal-close"></button>
-				<span class="gs-modal-title">Teste de Modal</span>
+		<div class="gs-modal-fade">
+
+			<div class="gs-modal-content" data-mname="modal1">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Teste de Modal</span>
+				</div>
+				<div class="body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum, metus vel fringilla blandit, magna dolor luctus elit, eget tincidunt purus ex ut est.</p>
+					<p>Suspendisse felis lorem, elementum at pharetra vel, pharetra nec nulla. Nullam metus mi, ullamcorper tincidunt eleifend id, ullamcorper sit amet turpis. Sed placerat eget nisl eget vulputate.</p>
+				</div>
+				<div class="footer">
+					<div class="left">
+						<button type="button" class="gs-btn" data-mfunc="close">Quê?</button>
+					</div>
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">Ah, entendi.</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 			</div>
-			<div class="gs-modal-body">
-				<p>Texto do modal aqui.</p>
+			
+			<div class="gs-modal-content noclose" data-mname="modalLorem">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Termos e condições de uso</span>
+				</div>
+				<div class="body">
+					<p>3. RESTRIÇÃO DE ACESSO.</p>
+
+					<p>3.1. Você não pode tentar obter o acesso não autorizado aos sistemas de computador ou registro da base de dados.</p>
+
+					<p>3.2. Não é permitido fazer upload de arquivos que contenham software ou outros materiais que infrinjam quaisquer diretos de propriedade intelectual, incluindo direitos de marca registrada e direitos autorais (ou direitos de privacidade ou publicidade) a menos que você detenha controle dos referidos direitos ou tenha recebido todos os consentimentos necessários.</p>
+
+					<p>3.3. Não é permitido fazer upload ou transmitir arquivos que contenham ou disseminem vírus, worms, time bombs, arquivos corrompidos, ou qualquer outro software corrompido que possa danificar o website ou o computador de alguma outra pessoa.</p>
+
+					<p>3.4. Não é permitido violar ou encorajar outros para violar quaisquer leis ou regulamentos ou direitos legais de outro indivíduo.</p>
+
+					<p>3.5. Criar uma falsa identidade (incluindo declarar uma idade falsa), ou fingir ser qualquer pessoa ou entidade, para enganar outros ou para qualquer outro propósito é proibido.</p>
+
+					<p>3.6. O ServerFDA não tem obrigação de monitorar as informações postadas por usuários. Contudo, nos reservamos o direito de revisar materiais postados e remover qualquer material sem prévia notificação. O ServerFDA se reserva o direito de temporariamente ou permanentemente cancelar o seu acesso a qualquer momento, em caso de violação do presente Termos e Condições.</p>
+					
+					<p>5. PRIVACIDADE.</p>
+
+					<p>5.1. Qualquer informação pessoal que você forneça sobre você mesmo ao ServerFDA, somente será usada em conformidade com nossa Política de Privacidade. Através da apresentação de informações pessoais ao ServerFDA, você concorda com a divulgação das referidas informações pessoais para os propósitos para os quais você submeteu a informação, em conformidade com nossa política de privacidade. Caso você não concorde com nossa política de privacidade, por favor, não submeta nenhuma informação pessoal ou contate nossa equipe. Por favor, esteja ciente de que a política de privacidade não se aplica a websites ou outro conteúdo ou material operado ou fornecido por terceiros.</p>
+				</div>
+				<div class="footer">
+					<div class="left">
+						<button type="button" class="gs-btn danger" data-mfunc="close">Não Aceito</button>
+					</div>
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">Aceito</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 			</div>
-			<div class="gs-modal-footer">
-				<button type="button" class="gs-btn">Fechar</button>
-				<button type="button" class="gs-btn success">Salvar</button>
+			
+			<div class="gs-modal-content danger" data-mname="modal2">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Modal - Danger</span>
+				</div>
+				<div class="body">
+					<p>DANGER! This is dangerous, obey gficher NOW!</p>
+				</div>
+				<div class="footer">
+					<div class="left">
+						<button type="button" class="gs-btn" data-mfunc="close">Get out of here</button>
+					</div>
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">Boom!</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 			</div>
-		</div>
+			
+			<div class="gs-modal-content warning" data-mname="modal3">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Modal - Warning</span>
+				</div>
+				<div class="body">
+					<p>Warning! Something can be wrong, gficher.</p>
+				</div>
+				<div class="footer">
+					<div class="left">
+						<button type="button" class="gs-btn success" data-mfunc="close">I'll obey.</button>
+					</div>
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">I'll obey.</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="gs-modal-content success" data-mname="modal4">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Modal - Success</span>
+				</div>
+				<div class="body">
+					<p>Success! You obeyed gficher, now you'r free to take a walk.</p>
+					<p>( Come back later >:D )</p>
+				</div>
+				<div class="footer">
+					<div class="right">
+						<button type="button" class="gs-btn" data-mfunc="close">Uhull!</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+
+		</div> <!-- OVERLAY END -->
 
 		<div id="content">
 			<div id="ptitle">
@@ -74,10 +173,11 @@ $var = 1; // Define o menu
 
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Blocos de alerta<div class="gs-bsubtitle">Criados por um gatilho</div></div>
-				<input class="gs-btn" type="submit" name="button" id="button" value="Normal">
-				<input class="gs-btn delete" type="submit" name="button" id="button" value="Danger">
-				<input class="gs-btn warning" type="submit" name="button" id="button" value="Warning">
-				<input class="gs-btn success" type="submit" name="button" id="button" value="Success">
+				<input class="gs-btn" type="submit" name="button" id="button" value="Normal" data-openmodal="modal1">
+				<input class="gs-btn danger" type="submit" name="button" id="button" value="Danger" data-openmodal="modal2">
+				<input class="gs-btn warning" type="submit" name="button" id="button" value="Warning" data-openmodal="modal3">
+				<input class="gs-btn success" type="submit" name="button" id="button" value="Success" data-openmodal="modal4">
+				<input class="gs-btn" type="submit" name="button" id="button" value="Termos e condições" data-openmodal="modalLorem">
 			</div>
 
 			<div class="gs-cbigbox">
@@ -99,19 +199,19 @@ $var = 1; // Define o menu
 				<div class="progressbar"><div class="pbprogress" data-value="25" id="pb02"></div></div>
 				<div class="progressbar big"><div class="pbprogress" data-value="25" id="pb03"></div></div>
 
-				<input class="gs-btn delete small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb01" data-value="0">
+				<input class="gs-btn danger small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb01" data-value="0">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb01" data-value="25">
 				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb01" data-value="50">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb01" data-value="75">
 				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb01" data-value="100">
 				<hr class="gs-hr invisible">
-				<input class="gs-btn delete small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb02" data-value="0">
+				<input class="gs-btn danger small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb02" data-value="0">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb02" data-value="25">
 				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb02" data-value="50">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb02" data-value="75">
 				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb02" data-value="100">
 				<hr class="gs-hr invisible">
-				<input class="gs-btn delete small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb03" data-value="0">
+				<input class="gs-btn danger small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb03" data-value="0">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb03" data-value="25">
 				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb03" data-value="50">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb03" data-value="75">
@@ -142,7 +242,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 							<td>
 								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
-								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
 							</td>
 						</tr>
 						<tr>
@@ -152,7 +252,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 							<td>
 								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
-								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
 							</td>
 						</tr>
 						<tr>
@@ -162,7 +262,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 							<td>
 								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
-								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
 							</td>
 						</tr>
 						<tr>
@@ -172,7 +272,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 							<td>
 								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
-								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
 							</td>
 						</tr>
 						<tr>
@@ -182,7 +282,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 							<td>
 								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
-								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
 							</td>
 						</tr>
 						<tr>
@@ -192,7 +292,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 							<td>
 								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
-								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
 							</td>
 						</tr>
 						<tr>
@@ -202,7 +302,7 @@ $var = 1; // Define o menu
 							<td>21/04/1999 às 03:00 PM</td>
 							<td>
 								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
-								<input class="gs-btn small delete" type="submit" name="button" id="button" value="Deletar">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
 							</td>
 						</tr>
 						<?php
@@ -534,7 +634,7 @@ for ($i = 0; $i < 0; $i++) {
 					<input class="gs-btn big" type="submit" name="button" id="button" value="Entrar">
 					<input class="gs-btn giant" type="submit" name="button" id="button" value="Entrar">
 
-					<input class="gs-btn delete" type="submit" name="button" id="button" value="Teste">
+					<input class="gs-btn danger" type="submit" name="button" id="button" value="Teste">
 					<input class="gs-btn warning" type="submit" name="button" id="button" value="Botão">
 					<input class="gs-btn success" type="submit" name="button" id="button" value="Outro teste">
 				</form>

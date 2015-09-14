@@ -184,7 +184,7 @@ select::-ms-expand {
 	padding-right: 10px;
 	outline: none;
 	font-family: 'Open Sans';
-	transition: .2s;
+	transition: .1s;
 	-webkit-appearance: none;
 	font-weight: bold;
 }
@@ -194,12 +194,12 @@ select::-ms-expand {
 	background: #1A1827;
 }
 
-.gs-btn.delete {
+.gs-btn.danger {
 	background: #DD4B39;
 	border-color: #D73925;
 }
 
-.gs-btn.delete:hover {
+.gs-btn.danger:hover {
 	background: #D73925;
 }
 
@@ -214,11 +214,11 @@ select::-ms-expand {
 
 .gs-btn.success {
 	background: #00A65A;
-	border-color: #569A58;
+	border-color: #008D4C;
 }
 
 .gs-btn.success:hover {
-	background: #569A58;
+	background: #008D4C;
 }
 
 .gs-btn.success {

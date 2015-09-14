@@ -1,3 +1,31 @@
+function ModalOpen2( $modalName ) {
+	if ($("[data-mname='"+$modalName+"']").size() == 1) {
+		$(".gs-modal-fade").css('display','block').scrollTop(0);
+		$("[data-mname='"+$modalName+"']").css('display','block');
+			
+		setTimeout(function() {
+			$(".gs-modal-fade").css('opacity','1');
+			$("[data-mname='"+$modalName+"']").css('top','100px').css('opacity','1');
+		}, 1);
+	}
+}
+
+$("[data-mfunc='close']").click(function () {
+	$closeVar = $(this);
+	
+	$closeVar.closest("[data-mname]").css('top','0').css('opacity','0');
+	$(".gs-modal-fade").css('opacity','0');
+
+	setTimeout(function() {
+		$closeVar.closest("[data-mname]").css('display','none');
+		$(".gs-modal-fade").css('display','none');
+	}, 100);
+});
+
+$("[data-openmodal]").click(function () {
+	ModalOpen2($(this).attr("data-openmodal"));
+});
+
 $(".pbprogress").each(function() {
 	$(this).css('width', $(this).attr("data-value")  + '%');
 });
