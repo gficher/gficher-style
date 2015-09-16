@@ -8,8 +8,8 @@ $var = 1; // Define o menu
 		<title>Página Inicial</title>
 		<link rel="icon" href="favicon.ico"/>
 		<meta name="Author" content="gficher"/>
-		<meta name="description" content=""/>
-		<meta name="keywords" content=""/>
+		<meta name="description" content="gficher's style"/>
+		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
@@ -17,6 +17,7 @@ $var = 1; // Define o menu
 		<link href='css/sidemenu.css' rel='stylesheet' type='text/css'>
 		<link href='css/content.css' rel='stylesheet' type='text/css'>
 		<link href='css/pikaday.css' rel='stylesheet' type='text/css'>
+		<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -49,7 +50,7 @@ $var = 1; // Define o menu
 				</div>
 			</div>
 			
-			<div class="gs-modal-content noclose" data-mname="modalLorem">
+			<div class="gs-modal-content noclose large" data-mname="modalLorem">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
 					<span class="title">Termos e condições de uso</span>
@@ -103,7 +104,7 @@ $var = 1; // Define o menu
 				</div>
 			</div>
 			
-			<div class="gs-modal-content warning" data-mname="modal3">
+			<div class="gs-modal-content warning small" data-mname="modal3">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
 					<span class="title">Modal - Warning</span>
@@ -112,11 +113,8 @@ $var = 1; // Define o menu
 					<p>Warning! Something can be wrong, gficher.</p>
 				</div>
 				<div class="footer">
-					<div class="left">
-						<button type="button" class="gs-btn success" data-mfunc="close">I'll obey.</button>
-					</div>
 					<div class="right">
-						<button type="button" class="gs-btn success" data-mfunc="close">I'll obey.</button>
+						<button type="button" class="gs-btn success" data-mfunc="close">Obey gficher!</button>
 					</div>
 					<div style="clear: both;"></div>
 				</div>
@@ -142,9 +140,19 @@ $var = 1; // Define o menu
 		</div> <!-- OVERLAY END -->
 
 		<div id="content">
-			<div id="ptitle">
-				<div id="picon"></div>
-				<div id="pttext">Cartilha geral</div>
+			<div class="ptitle">
+				<div class="apicon"></div>
+				<div class="pttext">Cartilha geral</div>
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">Geral</a>
+					</li>
+					<li>
+						<a href="#">Administrador</a>
+					</li>
+					<li>Cartilha geral</li>
+				</ul>
+				<div style="clear: both;"></div>
 			</div>
 
 			<div class="gs-messagebox"><b>Info:</b> O arquivo foi salvo</div>
@@ -192,30 +200,33 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
-
+			
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Barra de progresso<div class="gs-bsubtitle">Com animação :)</div></div>
-				<div class="progressbar small"><div class="pbprogress" data-value="25" id="pb01"></div></div>
-				<div class="progressbar"><div class="pbprogress" data-value="25" id="pb02"></div></div>
-				<div class="progressbar big"><div class="pbprogress" data-value="25" id="pb03"></div></div>
+				
+				<div class="progressbar small">
+					<div class="pbprogress" data-value="25" id="pb01"></div>
+				</div>
+				
+				<div class="progressbar">
+					<div class="pbprogress warning" data-value="25" id="pb02"></div>
+				</div>
+				
+				<div class="progressbar big">
+					<div class="pbprogress danger" data-value="25" id="pb03"></div>
+				</div>
+				
+				<div class="progressbar">
+					<div class="pbprogress" data-value="20" id="pb04"></div>
+					<div class="pbprogress warning" data-value="20" id="pb05"></div>
+					<div class="pbprogress danger" data-value="35" id="pb06"></div>
+				</div>
 
-				<input class="gs-btn danger small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb01" data-value="0">
-				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb01" data-value="25">
-				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb01" data-value="50">
-				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb01" data-value="75">
-				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb01" data-value="100">
-				<hr class="gs-hr invisible">
 				<input class="gs-btn danger small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb02" data-value="0">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb02" data-value="25">
 				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb02" data-value="50">
 				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb02" data-value="75">
 				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb02" data-value="100">
-				<hr class="gs-hr invisible">
-				<input class="gs-btn danger small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb03" data-value="0">
-				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb03" data-value="25">
-				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb03" data-value="50">
-				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb03" data-value="75">
-				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb03" data-value="100">
 			</div>
 
 			<div class="gs-cbigbox">
@@ -229,6 +240,7 @@ $var = 1; // Define o menu
 						<tr>
 							<th>Título</th>
 							<th>Enviado por</th>
+									
 							<th>Prioridade</th>
 							<th>Data</th>
 							<th>Opções</th>
@@ -421,20 +433,43 @@ for ($i = 0; $i < 0; $i++) {
 
 					<label class="gs-flabel">
 						<b>URL Normal</b>
-						<div class="gs-prefix">
-							<span class="gs-prefix-text left">URL</span><input class="gs-ftext gs-withpre left" type="text" name="username" id="username">
+						<div class="gs-prefix-group">
+							<span class="gs-addon left">URL</span>
+							<input class="gs-ftext gs-withpre left" type="text" name="username" id="username">
 						</div>
 					</label>
 					<label class="gs-flabel">
 						<b>Subdomínio</b>
-						<div class="gs-prefix">
-							<span class="gs-prefix-text left">http://</span><input class="gs-ftext gs-withpre both" type="text" name="username" id="username"><span class="gs-prefix-text right">.gficher.tk</span>
+						<div class="gs-prefix-group">
+							<span class="gs-addon left">http://</span>
+							<input class="gs-ftext gs-withpre both" type="text" name="username" id="username">
+							<span class="gs-addon right">.gficher.tk</span>
 						</div>
 					</label>
 					<label class="gs-flabel">
 						<b>Subdomínio</b>
-						<div class="gs-prefix">
-							<input class="gs-ftext gs-withpre right" type="text" name="username" id="username"><span class="gs-prefix-text right">batatas</span>
+						<div class="gs-prefix-group">
+							<input class="gs-ftext gs-withpre right" type="text" name="username" id="username">
+							<span class="gs-addon right">batatas</span>
+						</div>
+					</label>
+					
+					<a name="top"></a>
+					<hr class="gs-hr">
+					
+					<label class="gs-flabel">
+						<b>Teste</b>
+						<div class="gs-prefix-group">
+							<span class="gs-addon">R$</span>
+							<input class="gs-ftext" type="text" name="username" id="username">
+						</div>
+					</label>
+					
+					<label class="gs-flabel">
+						<b>Teste 2</b>
+						<div class="gs-prefix-group">
+							<input class="gs-ftext" type="text" name="username" id="username">
+							<span class="gs-addon">.00</span>
 						</div>
 					</label>
 
@@ -474,9 +509,6 @@ for ($i = 0; $i < 0; $i++) {
 
 					<hr class="gs-hr">
 
-
-
-
 					<label class="gs-flabel">
 						<b>Tiny</b>
 						<input class="gs-ftext tiny" type="text" name="username" id="username" value="GF">
@@ -498,8 +530,6 @@ for ($i = 0; $i < 0; $i++) {
 						<input class="gs-ftext giant" type="text" name="username" id="username" value="Gustavo Ficher Catarino - e ainda sobra muito espaço :)">
 					</label>
 
-
-
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
@@ -509,7 +539,26 @@ for ($i = 0; $i < 0; $i++) {
 						<input class="gs-ftext fpass" type="password" name="password" id="password" placeholder="Senha">
 					</label>
 
-
+					<hr class="gs-hr">
+					
+					<label class="gs-flabel">
+						<b>Usuário</b>
+						<div class="gs-prefix-group">
+							<span class="gs-addon icon fa fa-user"></span>
+							<input class="gs-ftext" type="text" name="username" id="username" placeholder="Usuário">
+						</div>
+					</label>
+					
+					<label class="gs-flabel">
+						<b>Senha</b>
+						<div class="gs-prefix-group">
+							<span class="gs-addon icon fa fa-lock"></span>
+							<input class="gs-ftext" type="password" name="username" id="username" placeholder="Senha">
+						</div>
+					</label>
+					
+					<input class="gs-btn" type="submit" name="button" id="button" value="Entrar">
+					
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
@@ -697,6 +746,14 @@ for ($i = 0; $i < 0; $i++) {
 				format: 'DD/MM/YYYY',
 			});
 
+			function mudaPbar() {
+				$("#pb01").css('width', Math.floor(Math.random() * 101) + '%');
+				$("#pb02").css('width', Math.floor(Math.random() * 101) + '%');
+				$("#pb03").css('width', Math.floor(Math.random() * 101) + '%');
+				setTimeout(mudaPbar, 1000);
+			}
+			
+			//mudaPbar();
 		</script>
 	</body>
 </html>

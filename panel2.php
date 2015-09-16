@@ -8,8 +8,8 @@ $var = 1; // Define o menu
 		<title>Painel 2</title>
 		<link rel="icon" href="favicon.ico"/>
 		<meta name="Author" content="gficher"/>
-		<meta name="description" content=""/>
-		<meta name="keywords" content=""/>
+		<meta name="description" content="gficher's style"/>
+		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
@@ -28,9 +28,15 @@ $var = 1; // Define o menu
 		</div>
 
 		<div id="content">
-			<div id="ptitle">
-				<div id="picon"></div>
-				<div id="pttext">Pré visualização</div>
+			<div class="ptitle">
+				<div class="picon"></div>
+				<div class="pttext">Pré visualização</div>
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">Geral</a>
+					</li>
+					<li>Pré visualização</li>
+				</ul>
 			</div>
 
 			<div class="gs-messagebox"><b>Bem-vindo ao Oficina do Aluno web!</b><br>Sistema: gficher's style v1 Alpha.<br>Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
