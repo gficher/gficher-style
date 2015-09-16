@@ -8,14 +8,16 @@ $var = 1; // Define o menu
 		<title>Página Inicial</title>
 		<link rel="icon" href="favicon.ico"/>
 		<meta name="Author" content="gficher"/>
-		<meta name="description" content=""/>
-		<meta name="keywords" content=""/>
+		<meta name="description" content="gficher's style"/>
+		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
 		<link href='css/sidemenu.css' rel='stylesheet' type='text/css'>
 		<link href='css/content.css' rel='stylesheet' type='text/css'>
+		<link href='css/pikaday.css' rel='stylesheet' type='text/css'>
+		<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -25,18 +27,138 @@ $var = 1; // Define o menu
 		<div id="sidemenu" class="gs-sidemenu">
 			<?php include_once('includes/menu.php'); ?>
 		</div>
-		
+
+		<div class="gs-modal-fade">
+
+			<div class="gs-modal-content" data-mname="modal1">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Teste de Modal</span>
+				</div>
+				<div class="body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum, metus vel fringilla blandit, magna dolor luctus elit, eget tincidunt purus ex ut est.</p>
+					<p>Suspendisse felis lorem, elementum at pharetra vel, pharetra nec nulla. Nullam metus mi, ullamcorper tincidunt eleifend id, ullamcorper sit amet turpis. Sed placerat eget nisl eget vulputate.</p>
+				</div>
+				<div class="footer">
+					<div class="left">
+						<button type="button" class="gs-btn" data-mfunc="close">Quê?</button>
+					</div>
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">Ah, entendi.</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="gs-modal-content noclose large" data-mname="modalLorem">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Termos e condições de uso</span>
+				</div>
+				<div class="body">
+					<p>3. RESTRIÇÃO DE ACESSO.</p>
+
+					<p>3.1. Você não pode tentar obter o acesso não autorizado aos sistemas de computador ou registro da base de dados.</p>
+
+					<p>3.2. Não é permitido fazer upload de arquivos que contenham software ou outros materiais que infrinjam quaisquer diretos de propriedade intelectual, incluindo direitos de marca registrada e direitos autorais (ou direitos de privacidade ou publicidade) a menos que você detenha controle dos referidos direitos ou tenha recebido todos os consentimentos necessários.</p>
+
+					<p>3.3. Não é permitido fazer upload ou transmitir arquivos que contenham ou disseminem vírus, worms, time bombs, arquivos corrompidos, ou qualquer outro software corrompido que possa danificar o website ou o computador de alguma outra pessoa.</p>
+
+					<p>3.4. Não é permitido violar ou encorajar outros para violar quaisquer leis ou regulamentos ou direitos legais de outro indivíduo.</p>
+
+					<p>3.5. Criar uma falsa identidade (incluindo declarar uma idade falsa), ou fingir ser qualquer pessoa ou entidade, para enganar outros ou para qualquer outro propósito é proibido.</p>
+
+					<p>3.6. O ServerFDA não tem obrigação de monitorar as informações postadas por usuários. Contudo, nos reservamos o direito de revisar materiais postados e remover qualquer material sem prévia notificação. O ServerFDA se reserva o direito de temporariamente ou permanentemente cancelar o seu acesso a qualquer momento, em caso de violação do presente Termos e Condições.</p>
+					
+					<p>5. PRIVACIDADE.</p>
+
+					<p>5.1. Qualquer informação pessoal que você forneça sobre você mesmo ao ServerFDA, somente será usada em conformidade com nossa Política de Privacidade. Através da apresentação de informações pessoais ao ServerFDA, você concorda com a divulgação das referidas informações pessoais para os propósitos para os quais você submeteu a informação, em conformidade com nossa política de privacidade. Caso você não concorde com nossa política de privacidade, por favor, não submeta nenhuma informação pessoal ou contate nossa equipe. Por favor, esteja ciente de que a política de privacidade não se aplica a websites ou outro conteúdo ou material operado ou fornecido por terceiros.</p>
+				</div>
+				<div class="footer">
+					<div class="left">
+						<button type="button" class="gs-btn danger" data-mfunc="close">Não Aceito</button>
+					</div>
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">Aceito</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="gs-modal-content danger" data-mname="modal2">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Modal - Danger</span>
+				</div>
+				<div class="body">
+					<p>DANGER! This is dangerous, obey gficher NOW!</p>
+				</div>
+				<div class="footer">
+					<div class="left">
+						<button type="button" class="gs-btn" data-mfunc="close">Get out of here</button>
+					</div>
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">Boom!</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="gs-modal-content warning small" data-mname="modal3">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Modal - Warning</span>
+				</div>
+				<div class="body">
+					<p>Warning! Something can be wrong, gficher.</p>
+				</div>
+				<div class="footer">
+					<div class="right">
+						<button type="button" class="gs-btn success" data-mfunc="close">Obey gficher!</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			
+			<div class="gs-modal-content success" data-mname="modal4">
+				<div class="header">
+					<button type="button" class="close" data-mfunc="close"></button>
+					<span class="title">Modal - Success</span>
+				</div>
+				<div class="body">
+					<p>Success! You obeyed gficher, now you'r free to take a walk.</p>
+					<p>( Come back later >:D )</p>
+				</div>
+				<div class="footer">
+					<div class="right">
+						<button type="button" class="gs-btn" data-mfunc="close">Uhull!</button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+
+		</div> <!-- OVERLAY END -->
+
 		<div id="content">
-			<div id="gs-menuoverlay"></div>
-			<div id="ptitle">
-				<div id="picon"></div>
-				<div id="pttext">Página inicial</div>
+			<div class="ptitle">
+				<div class="apicon"></div>
+				<div class="pttext">Cartilha geral</div>
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">Geral</a>
+					</li>
+					<li>
+						<a href="#">Administrador</a>
+					</li>
+					<li>Cartilha geral</li>
+				</ul>
+				<div style="clear: both;"></div>
 			</div>
 
 			<div class="gs-messagebox"><b>Info:</b> O arquivo foi salvo</div>
-			<div class="gs-messagebox gs-success"><b>Sucesso!</b> O arquivo foi salvo corretamente</div>
-			<div class="gs-messagebox gs-warning"><b>Alerta!</b> O arquivo foi salvo com um erro</div>
-			<div class="gs-messagebox gs-danger"><b>Erro!</b> O arquivo não foi salvo corretamente</div>
+			<div class="gs-messagebox success"><b>Sucesso!</b> O arquivo foi salvo corretamente</div>
+			<div class="gs-messagebox warning"><b>Alerta!</b> O arquivo foi salvo mas possui erros</div>
+			<div class="gs-messagebox danger"><b>Erro!</b> O arquivo não foi salvo.</div>
 
 			<div class="gs-cbigbox tilebox big">
 				<div class="gs-tile">
@@ -58,6 +180,15 @@ $var = 1; // Define o menu
 			</div>	
 
 			<div class="gs-cbigbox">
+				<div class="gs-btitle">Blocos de alerta<div class="gs-bsubtitle">Criados por um gatilho</div></div>
+				<input class="gs-btn" type="submit" name="button" id="button" value="Normal" data-openmodal="modal1">
+				<input class="gs-btn danger" type="submit" name="button" id="button" value="Danger" data-openmodal="modal2">
+				<input class="gs-btn warning" type="submit" name="button" id="button" value="Warning" data-openmodal="modal3">
+				<input class="gs-btn success" type="submit" name="button" id="button" value="Success" data-openmodal="modal4">
+				<input class="gs-btn" type="submit" name="button" id="button" value="Termos e condições" data-openmodal="modalLorem">
+			</div>
+
+			<div class="gs-cbigbox">
 				<div class="gs-btitle">Informações<div class="gs-bsubtitle">Informações básicas para acesso</div></div>
 				Texto antes da lista
 				<ul class="gs-infolist">
@@ -69,55 +200,125 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
+			
+			<div class="gs-cbigbox">
+				<div class="gs-btitle">Barra de progresso<div class="gs-bsubtitle">Com animação :)</div></div>
+				
+				<div class="progressbar small">
+					<div class="pbprogress" data-value="25" id="pb01"></div>
+				</div>
+				
+				<div class="progressbar">
+					<div class="pbprogress warning" data-value="25" id="pb02"></div>
+				</div>
+				
+				<div class="progressbar big">
+					<div class="pbprogress danger" data-value="25" id="pb03"></div>
+				</div>
+				
+				<div class="progressbar">
+					<div class="pbprogress" data-value="20" id="pb04"></div>
+					<div class="pbprogress warning" data-value="20" id="pb05"></div>
+					<div class="pbprogress danger" data-value="35" id="pb06"></div>
+				</div>
+
+				<input class="gs-btn danger small autosize" type="submit" name="button" id="button" value="0%" data-action="pupdate" data-target="pb02" data-value="0">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="25%" data-action="pupdate" data-target="pb02" data-value="25">
+				<input class="gs-btn warning small autosize" type="submit" name="button" id="button" value="50%" data-action="pupdate" data-target="pb02" data-value="50">
+				<input class="gs-btn small autosize" type="submit" name="button" id="button" value="75%" data-action="pupdate" data-target="pb02" data-value="75">
+				<input class="gs-btn success small autosize" type="submit" name="button" id="button" value="100%" data-action="pupdate" data-target="pb02" data-value="100">
+			</div>
 
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de tabela</div>
 
 				<input class="gs-ftext" type="text" name="username" id="tsearch1" placeholder="Pesquisar" data-action="tsearch">
 				<div id="pager1" class="gs-tpager"></div>
-				
+
 				<table id="table1" class="gs-table" data-tpager="pager1" data-tsearch="tsearch1">
 					<thead>
 						<tr>
 							<th>Título</th>
 							<th>Enviado por</th>
+									
 							<th>Prioridade</th>
 							<th>Data</th>
+							<th>Opções</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><a href="" title="">Eu criei tudo isso aqui</a></td>
+							<td><a href="" title="">Matioli S2</a></td>
 							<td>Gustavo Ficher</td>
 							<td>Alta</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
 							<td><a href="" title="">Manda nudes, gatinha</a></td>
 							<td>Rafael Guerreiro</td>
 							<td>Urgente</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
-							<td><a href="" title="">To marombando</a></td>
+							<td><a href="" title="">To marombando, já volto...</a></td>
 							<td>Rafael Bonin</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
-							<td><a href="" title="">PoRRRta</a></td>
+							<td><a href="" title="">Eu falo poRRRta</a></td>
 							<td>Marília Lup</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<tr>
 							<td><a href="" title="">Não sou Felipe</a></td>
 							<td>Luana Felipe</td>
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
+							</td>
+						</tr>
+						<tr>
+							<td><a href="" title="">Shift, Shift, Shift!</a></td>
+							<td>Luca Morais</td>
+							<td>Normal</td>
+							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
+							</td>
+						</tr>
+						<tr>
+							<td><a href="" title="">Amo SENAI</a></td>
+							<td>Rafael Guerra</td>
+							<td>Normal</td>
+							<td>21/04/1999 às 03:00 PM</td>
+							<td>
+								<input class="gs-btn small success" type="submit" name="button" id="button" value="Ver">
+								<input class="gs-btn small danger" type="submit" name="button" id="button" value="Deletar">
+							</td>
 						</tr>
 						<?php
-for ($i = 0; $i < 1; $i++) {
+for ($i = 0; $i < 0; $i++) {
 	echo '
 						<tr>
 							<td><a href="" title="">Eu criei tudo isso aqui</a></td>
@@ -154,17 +355,22 @@ for ($i = 0; $i < 1; $i++) {
 					</tbody>
 				</table>
 			</div>
-			<a name="top"></a>
+
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de gráfico</div>
-				<div class="canv">
-					<canvas class="graph" id="graphCadastros" height="10"></canvas>
-				</div>
+				<canvas class="gs-graph" id="graphCadastros" height="50"></canvas>
 			</div>
 
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de formulário</div>
 				<form name="form1" method="post" action="">
+
+					<label class="gs-flabel">
+						<b>Data</b>
+						<input class="gs-ftext" type="text" name="fdata" id="fdata" placeholder="dd/mm/yyyy">
+					</label>
+
+					<hr class="gs-hr">
 
 					<label class="gs-flabel">
 						<b>Título</b>
@@ -180,7 +386,7 @@ for ($i = 0; $i < 1; $i++) {
 								<option value="3">Teste do nome do Edit</option>
 							</optgroup>
 							<optgroup label="Teste 2">
-								<option value="4" selected="selected">Teste</option>
+								<option value="4">Teste</option>
 								<option value="5">Batata</option>
 								<option value="6">Teste do nome do Edit</option>
 							</optgroup>
@@ -196,7 +402,7 @@ for ($i = 0; $i < 1; $i++) {
 								<option value="3">Teste do nome do Edit</option>
 							</optgroup>
 							<optgroup label="Teste 2">
-								<option value="4" selected="selected">Teste</option>
+								<option value="4">Teste</option>
 								<option value="5">Batata</option>
 								<option value="6">Teste do nome do Edit</option>
 							</optgroup>
@@ -227,14 +433,43 @@ for ($i = 0; $i < 1; $i++) {
 
 					<label class="gs-flabel">
 						<b>URL Normal</b>
-						<div class="gs-prefix">
-							<span class="gs-prefix-text left">URL</span><input class="gs-ftext gs-withpre left" type="text" name="username" id="username">
+						<div class="gs-prefix-group">
+							<span class="gs-addon left">URL</span>
+							<input class="gs-ftext gs-withpre left" type="text" name="username" id="username">
 						</div>
 					</label>
 					<label class="gs-flabel">
 						<b>Subdomínio</b>
-						<div class="gs-prefix">
-							<span class="gs-prefix-text left">http://</span><input class="gs-ftext gs-withpre both" type="text" name="username" id="username"><span class="gs-prefix-text right">.gficher.tk</span>
+						<div class="gs-prefix-group">
+							<span class="gs-addon left">http://</span>
+							<input class="gs-ftext gs-withpre both" type="text" name="username" id="username">
+							<span class="gs-addon right">.gficher.tk</span>
+						</div>
+					</label>
+					<label class="gs-flabel">
+						<b>Subdomínio</b>
+						<div class="gs-prefix-group">
+							<input class="gs-ftext gs-withpre right" type="text" name="username" id="username">
+							<span class="gs-addon right">batatas</span>
+						</div>
+					</label>
+					
+					<a name="top"></a>
+					<hr class="gs-hr">
+					
+					<label class="gs-flabel">
+						<b>Teste</b>
+						<div class="gs-prefix-group">
+							<span class="gs-addon">R$</span>
+							<input class="gs-ftext" type="text" name="username" id="username">
+						</div>
+					</label>
+					
+					<label class="gs-flabel">
+						<b>Teste 2</b>
+						<div class="gs-prefix-group">
+							<input class="gs-ftext" type="text" name="username" id="username">
+							<span class="gs-addon">.00</span>
 						</div>
 					</label>
 
@@ -274,9 +509,6 @@ for ($i = 0; $i < 1; $i++) {
 
 					<hr class="gs-hr">
 
-
-
-
 					<label class="gs-flabel">
 						<b>Tiny</b>
 						<input class="gs-ftext tiny" type="text" name="username" id="username" value="GF">
@@ -298,20 +530,37 @@ for ($i = 0; $i < 1; $i++) {
 						<input class="gs-ftext giant" type="text" name="username" id="username" value="Gustavo Ficher Catarino - e ainda sobra muito espaço :)">
 					</label>
 
-
-
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
-						<input class="gs-ftext gs-fuser-icon" class="fusername" type="text" name="username" id="username" placeholder="Usuário">
+						<input class="gs-ftext fuser" type="text" name="username" id="username" placeholder="Usuário">
 					</label>
 					<label class="gs-flabel">
-						<input class="gs-ftext gs-fpass-icon" class="fpassword" type="password" name="password" id="password" placeholder="Senha">
+						<input class="gs-ftext fpass" type="password" name="password" id="password" placeholder="Senha">
 					</label>
-					
 
 					<hr class="gs-hr">
 					
+					<label class="gs-flabel">
+						<b>Usuário</b>
+						<div class="gs-prefix-group">
+							<span class="gs-addon icon fa fa-user"></span>
+							<input class="gs-ftext" type="text" name="username" id="username" placeholder="Usuário">
+						</div>
+					</label>
+					
+					<label class="gs-flabel">
+						<b>Senha</b>
+						<div class="gs-prefix-group">
+							<span class="gs-addon icon fa fa-lock"></span>
+							<input class="gs-ftext" type="password" name="username" id="username" placeholder="Senha">
+						</div>
+					</label>
+					
+					<input class="gs-btn" type="submit" name="button" id="button" value="Entrar">
+					
+					<hr class="gs-hr">
+
 					<label class="gs-flabel">
 						<b>Alternativa</b>
 						<select class="gs-fselect" name="select" id="select">
@@ -323,7 +572,7 @@ for ($i = 0; $i < 1; $i++) {
 								<option value="e">E</option>
 							</optgroup>
 							<optgroup label="Opções">
-								<option value="r" selected="selected">Rasurada</option>
+								<option value="r">Rasurada</option>
 								<option value="v">Em branco</option>
 							</optgroup>
 						</select>
@@ -339,7 +588,7 @@ for ($i = 0; $i < 1; $i++) {
 								<option value="e">E</option>
 							</optgroup>
 							<optgroup label="Opções">
-								<option value="r" selected="selected">Rasurada</option>
+								<option value="r">Rasurada</option>
 								<option value="v">Em branco</option>
 							</optgroup>
 						</select>
@@ -434,7 +683,7 @@ for ($i = 0; $i < 1; $i++) {
 					<input class="gs-btn big" type="submit" name="button" id="button" value="Entrar">
 					<input class="gs-btn giant" type="submit" name="button" id="button" value="Entrar">
 
-					<input class="gs-btn delete" type="submit" name="button" id="button" value="Teste">
+					<input class="gs-btn danger" type="submit" name="button" id="button" value="Teste">
 					<input class="gs-btn warning" type="submit" name="button" id="button" value="Botão">
 					<input class="gs-btn success" type="submit" name="button" id="button" value="Outro teste">
 				</form>
@@ -449,10 +698,12 @@ for ($i = 0; $i < 1; $i++) {
 				Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
 			</div>
 		</div>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/content.js"></script>
-		<script type="text/javascript" src="js/chart.min.js"></script>
-		<script type="text/javascript" >
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/content.js"></script>
+		<script src="js/chart.min.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/pikaday.js"></script>
+		<script type="text/javascript">
 			var cadastrosData = {
 				labels : ['Simulado 1','Simulado 2','Simulado 3','Simulado 4','Simulado 5','Simulado 6','Simulado 7'],
 				datasets : [
@@ -486,8 +737,23 @@ for ($i = 0; $i < 1; $i++) {
 					responsive: true,
 					multiTooltipTemplate: "<%=datasetLabel%>: <%= value %>",
 				});
-				window.location = '#top';
+
+				//window.location = '#top';
 			}
+
+			var picker = new Pikaday({
+				field: $('#fdata')[0],
+				format: 'DD/MM/YYYY',
+			});
+
+			function mudaPbar() {
+				$("#pb01").css('width', Math.floor(Math.random() * 101) + '%');
+				$("#pb02").css('width', Math.floor(Math.random() * 101) + '%');
+				$("#pb03").css('width', Math.floor(Math.random() * 101) + '%');
+				setTimeout(mudaPbar, 1000);
+			}
+			
+			//mudaPbar();
 		</script>
 	</body>
 </html>
