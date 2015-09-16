@@ -35,18 +35,6 @@
 	background: #DDD;
 }
 
-.gs-ftext.fuser {
-	background: #FFF url(../img/fa-user.png) no-repeat 10px;
-	padding-left: 35px;
-	background-size: 18px;
-}
-
-.gs-ftext.fpass {
-	background: #FFF url(../img/fa-lock.png) no-repeat 10px;
-	padding-left: 35px;
-	background-size: 18px;
-}
-
 .gs-ftext.display {
 	border: 0;
 	border-radius: 0;

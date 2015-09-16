@@ -531,15 +531,6 @@ for ($i = 0; $i < 0; $i++) {
 					</label>
 
 					<hr class="gs-hr">
-
-					<label class="gs-flabel">
-						<input class="gs-ftext fuser" type="text" name="username" id="username" placeholder="Usuário">
-					</label>
-					<label class="gs-flabel">
-						<input class="gs-ftext fpass" type="password" name="password" id="password" placeholder="Senha">
-					</label>
-
-					<hr class="gs-hr">
 					
 					<label class="gs-flabel">
 						<b>Usuário</b>
