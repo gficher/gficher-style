@@ -49,7 +49,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content noclose large" data-mname="modalLorem">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -69,7 +69,7 @@ $var = 1; // Define o menu
 					<p>3.5. Criar uma falsa identidade (incluindo declarar uma idade falsa), ou fingir ser qualquer pessoa ou entidade, para enganar outros ou para qualquer outro propósito é proibido.</p>
 
 					<p>3.6. O ServerFDA não tem obrigação de monitorar as informações postadas por usuários. Contudo, nos reservamos o direito de revisar materiais postados e remover qualquer material sem prévia notificação. O ServerFDA se reserva o direito de temporariamente ou permanentemente cancelar o seu acesso a qualquer momento, em caso de violação do presente Termos e Condições.</p>
-					
+
 					<p>5. PRIVACIDADE.</p>
 
 					<p>5.1. Qualquer informação pessoal que você forneça sobre você mesmo ao ServerFDA, somente será usada em conformidade com nossa Política de Privacidade. Através da apresentação de informações pessoais ao ServerFDA, você concorda com a divulgação das referidas informações pessoais para os propósitos para os quais você submeteu a informação, em conformidade com nossa política de privacidade. Caso você não concorde com nossa política de privacidade, por favor, não submeta nenhuma informação pessoal ou contate nossa equipe. Por favor, esteja ciente de que a política de privacidade não se aplica a websites ou outro conteúdo ou material operado ou fornecido por terceiros.</p>
@@ -84,7 +84,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content danger" data-mname="modal2">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -103,7 +103,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content warning small" data-mname="modal3">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -119,7 +119,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content success" data-mname="modal4">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -140,10 +140,9 @@ $var = 1; // Define o menu
 		</div> <!-- OVERLAY END -->
 
 		<div id="content">
-			<div class="ptitle">
-				<div class="apicon"></div>
-				<div class="pttext">Cartilha geral</div>
-				<ul class="breadcrumb">
+			<div class="gs-ptitle">
+				<div class="gs-pttext">Cartilha geral</div>
+				<ul class="gs-breadcrumb">
 					<li>
 						<a href="#">Geral</a>
 					</li>
@@ -188,7 +187,7 @@ $var = 1; // Define o menu
 				<input class="gs-btn" type="submit" name="button" id="button" value="Termos e condições" data-openmodal="modalLorem">
 			</div>
 
-			<div class="gs-cbigbox">
+			<div class="gs-cbigbox half">
 				<div class="gs-btitle">Informações<div class="gs-bsubtitle">Informações básicas para acesso</div></div>
 				Texto antes da lista
 				<ul class="gs-infolist">
@@ -200,22 +199,22 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
-			
-			<div class="gs-cbigbox">
+
+			<div class="gs-cbigbox half">
 				<div class="gs-btitle">Barra de progresso<div class="gs-bsubtitle">Com animação :)</div></div>
-				
+
 				<div class="progressbar small">
 					<div class="pbprogress" data-value="25" id="pb01"></div>
 				</div>
-				
+
 				<div class="progressbar">
 					<div class="pbprogress warning" data-value="25" id="pb02"></div>
 				</div>
-				
+
 				<div class="progressbar big">
 					<div class="pbprogress danger" data-value="25" id="pb03"></div>
 				</div>
-				
+
 				<div class="progressbar">
 					<div class="pbprogress" data-value="20" id="pb04"></div>
 					<div class="pbprogress warning" data-value="20" id="pb05"></div>
@@ -240,7 +239,7 @@ $var = 1; // Define o menu
 						<tr>
 							<th>Título</th>
 							<th>Enviado por</th>
-									
+
 							<th>Prioridade</th>
 							<th>Data</th>
 							<th>Opções</th>
@@ -453,10 +452,10 @@ for ($i = 0; $i < 0; $i++) {
 							<span class="gs-addon right">batatas</span>
 						</div>
 					</label>
-					
+
 					<a name="top"></a>
 					<hr class="gs-hr">
-					
+
 					<label class="gs-flabel">
 						<b>Teste</b>
 						<div class="gs-prefix-group">
@@ -464,7 +463,7 @@ for ($i = 0; $i < 0; $i++) {
 							<input class="gs-ftext" type="text" name="username" id="username">
 						</div>
 					</label>
-					
+
 					<label class="gs-flabel">
 						<b>Teste 2</b>
 						<div class="gs-prefix-group">
@@ -531,7 +530,7 @@ for ($i = 0; $i < 0; $i++) {
 					</label>
 
 					<hr class="gs-hr">
-					
+
 					<label class="gs-flabel">
 						<b>Usuário</b>
 						<div class="gs-prefix-group">
@@ -539,7 +538,7 @@ for ($i = 0; $i < 0; $i++) {
 							<input class="gs-ftext" type="text" name="username" id="username" placeholder="Usuário">
 						</div>
 					</label>
-					
+
 					<label class="gs-flabel">
 						<b>Senha</b>
 						<div class="gs-prefix-group">
@@ -547,9 +546,9 @@ for ($i = 0; $i < 0; $i++) {
 							<input class="gs-ftext" type="password" name="username" id="username" placeholder="Senha">
 						</div>
 					</label>
-					
+
 					<input class="gs-btn" type="submit" name="button" id="button" value="Entrar">
-					
+
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
@@ -688,6 +687,11 @@ for ($i = 0; $i < 0; $i++) {
 				<br><br>
 				Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
 			</div>
+
+			<div class="gs-footer">
+				<div class="left">Copyright © 2014-2015 <b>g Enterprise</b>. All rights reserved.</div>
+				<div class="right">Versão 1.0</div>
+			</div>
 		</div>
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/content.js"></script>
@@ -743,7 +747,7 @@ for ($i = 0; $i < 0; $i++) {
 				$("#pb03").css('width', Math.floor(Math.random() * 101) + '%');
 				setTimeout(mudaPbar, 1000);
 			}
-			
+
 			//mudaPbar();
 		</script>
 	</body>

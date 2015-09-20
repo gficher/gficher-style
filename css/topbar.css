@@ -17,7 +17,7 @@
 	width: 100%;
 	background: #29273F;
 	box-shadow: 0 0 1px 0 #000;
-	z-index: 999;
+	z-index: 100;
 }
 
 .gs-topbar #gs-userinfo {

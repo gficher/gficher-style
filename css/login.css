@@ -54,17 +54,6 @@ html, body {
 	margin: auto;
 }
 
-/*
-#content #box form input[type="text"],
-#content #box form input[type="password"] {
-	width: 153px;
-	outline: none;
-	font-size: 15px;
-	margin: none;
-	margin-top: 10px;
-}
-*/
-
 .gs-flabel {
 	margin-top: 10px;
 }

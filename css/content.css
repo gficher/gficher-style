@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 html, body {
-	/overflow: hidden;
 	max-width: 100%;
 	width: 100%;
 	height: 100%;
@@ -22,34 +21,29 @@ html, body {
 }
 
 #content {
-	/position: absolute;
-	/left: 250px;
-	/top: 60px;
-	/overflow-y: scroll;
 	min-height: calc(100% - 75px);
 	width: calc(100% - 250px);
 	background: #EEE;
 	overflow-x: auto;
-	padding-bottom: 15px;
 	
 	margin-left: 250px;
 	margin-top: 60px;
 }
 
-#content .ptitle {
+#content .gs-ptitle {
 	width: 100%;
 	border-bottom: 1px solid #DFDFDF;
 	font-family: 'Open Sans';
 }
 
-#content .ptitle .pttext:before {
+#content .gs-ptitle .gs-pttext:before {
 	content: '\f015';
 	font-family: 'FontAwesome';
 	font-size: 40px;
 	margin-right: 10px;
 }
 
-#content .ptitle .pttext {
+#content .gs-ptitle .gs-pttext {
 	margin-top: 20px;
 	display: inline-block;
 	float: left;
@@ -59,31 +53,33 @@ html, body {
 	margin-left: 15px;
 }
 
-#content .breadcrumb {
+#content .gs-breadcrumb {
 	float: right;
 	margin-right: 15px;
 	margin-top: 30px;
+	padding: 0;
 }
 
-#content .breadcrumb li {
+#content .gs-breadcrumb li {
 	display: inline-block;
 	font-size: 14px;
+	list-style: none;
 }
 
-#content .breadcrumb li + li:before {
+#content .gs-breadcrumb li + li:before {
 	content: '\f101\00a0';
 	color: #666;
 	font-size: 13px;
 	font-family: 'FontAwesome';
 }
 
-#content .breadcrumb li a {
+#content .gs-breadcrumb li a {
 	color: #3C8DBC;
 	text-decoration: none;
 	transition: .1s;
 }
 
-#content .breadcrumb li a:hover {
+#content .gs-breadcrumb li a:hover {
 	color: #29273F;
 	text-decoration: underline;
 }
@@ -196,7 +192,6 @@ html, body {
 .progressbar {
 	height: 25px;
 	background-color: #DDD;
-	border-radius: 3px;
 	padding: 0px;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -230,10 +225,12 @@ html, body {
 
 .progressbar.small {
 	height: 5px;
+	line-height: 0px;
 }
 
 .progressbar.big {
 	height: 30px;
+	line-height: 30px;
 }
 
 table.gs-table {
@@ -328,8 +325,8 @@ table.gs-table td a {
 .gs-infolist {
 	padding: 0;
 	margin: 0;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 .gs-infolist li {
@@ -358,9 +355,33 @@ table.gs-table td a {
 	max-width: 100%;
 }
 
+.gs-afooter {
+	width: calc(100% - 20px);
+	margin: auto;
+	margin-top: 20px;
+	border-top: 1px #BBB solid;
+	border-bottom: 1px #BBB solid;
+	padding: 10px;
+	background: #FFF;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	display: inline-block;
+	float: left;
+	
+	position: relative;
+}
+
+.gs-footer .left {
+	float: left;
+}
+
+.gs-footer .right {
+	float: right;
+}
+
 /* MOBILE */                                                                                               /* MOBILE */
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
 	#content #box {
 		width: 95%;
 	}
@@ -394,19 +415,18 @@ table.gs-table td a {
 	#content .gs-cbigbox.half {
 		width: calc(100% - 60px);
 	}
-
-	#content .ptitle {
-		padding-bottom: 10px;
-	}
 	
-	#content .ptitle .pttext {
+	#content .gs-ptitle .gs-pttext {
 		display: block;
 		float: none;
 		
 	}
 	
-	#content .breadcrumb {
-		display: none;
+	#content .gs-breadcrumb {
+		float: none;
+		padding: 0;
+		margin-left: 20px;
+		margin-top: 10px;
 	}
 	
 	#content .gs-cbigbox.tilebox .gs-tile {
@@ -535,17 +555,14 @@ table.gs-table td a {
 		float: none;
 	}
 	
-	/**/
-	
 	.gs-addon {
 		width: 1px;
 	}
 
-	/**/
-	
 	.gs-modal-content {
 		width: 100%;
 		width: calc(100% - 20px) !important;
+		margin-bottom: 20px;
 	}
 	
 	.gs-modal-content .footer .left {

@@ -17,6 +17,7 @@ $var = 1; // Define o menu
 		<link href='css/sidemenu.css' rel='stylesheet' type='text/css'>
 		<link href='css/content.css' rel='stylesheet' type='text/css'>
 		<link href='css/pikaday.css' rel='stylesheet' type='text/css'>
+		<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -28,15 +29,15 @@ $var = 1; // Define o menu
 		</div>
 
 		<div id="content">
-			<div class="ptitle">
-				<div class="picon"></div>
-				<div class="pttext">Pré visualização</div>
-				<ul class="breadcrumb">
+			<div class="gs-ptitle">
+				<div class="gs-pttext">Pré visualização</div>
+				<ul class="gs-breadcrumb">
 					<li>
 						<a href="#">Geral</a>
 					</li>
 					<li>Pré visualização</li>
 				</ul>
+				<div style="clear: both;"></div>
 			</div>
 
 			<div class="gs-messagebox"><b>Bem-vindo ao Oficina do Aluno web!</b><br>Sistema: gficher's style v1 Alpha.<br>Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
@@ -93,6 +94,10 @@ $var = 1; // Define o menu
 				</table>
 			</div>
 			
+			<div class="gs-footer">
+				<div class="left">Copyright © 2014-2015 <b>g Enterprise</b>. All rights reserved.</div>
+				<div class="right">Versão 1.0</div>
+			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/content.js"></script>

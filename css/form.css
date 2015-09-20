@@ -29,10 +29,15 @@
 	font-size: 14px;
 	-webkit-appearance: none;
 	-webkit-border-radius:0;
+	transition: .1s;
 }
 
 .gs-ftext:disabled {
 	background: #DDD;
+}
+
+.gs-ftext:focus {
+	border-color: #29273F;
 }
 
 .gs-ftext.display {
@@ -142,6 +147,10 @@
 	-webkit-border-radius:0;
 }
 
+.gs-fselect:focus {
+	border-color: #29273F;
+}
+
 select::-ms-expand {
 	display: none;
 }
@@ -161,8 +170,9 @@ select::-ms-expand {
 	outline: none;
 	font-family: 'Open Sans';
 	transition: .1s;
-	-webkit-appearance: none;
 	font-weight: bold;
+	
+	-webkit-appearance: none;
 }
 
 .gs-btn:hover {
@@ -257,6 +267,14 @@ select::-ms-expand {
 	-webkit-border-radius:0;
 }
 
+.gs-textarea:focus {
+	border-color: #29273F;
+}
+
 .gs-textarea.noresize {
 	resize: none;
+}
+
+::-moz-focus-inner {
+	border:0;
 }
