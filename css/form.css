@@ -87,7 +87,8 @@
 }
 
 .gs-flabel .gs-addon.icon {
-	width: 15px;
+	padding: 0;
+	width: 35px;
 	text-align: center;
 }
 

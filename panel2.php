@@ -93,11 +93,6 @@ $var = 1; // Define o menu
 					</tbody>
 				</table>
 			</div>
-			
-			<div class="gs-footer">
-				<div class="left">Copyright © 2014-2015 <b>g Enterprise</b>. All rights reserved.</div>
-				<div class="right">Versão 1.0</div>
-			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/content.js"></script>

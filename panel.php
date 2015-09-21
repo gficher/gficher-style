@@ -139,6 +139,39 @@ $var = 1; // Define o menu
 
 		</div> <!-- OVERLAY END -->
 
+		<div id="gs-notification-box">
+			<ul>
+				<li>
+					Notificação 1
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 2
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 3
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 4
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+			</ul>
+		</div>
+
 		<div id="content">
 			<div class="gs-ptitle">
 				<div class="gs-pttext">Cartilha geral</div>
@@ -686,11 +719,6 @@ for ($i = 0; $i < 0; $i++) {
 				Donec id elementum nisl, nec porttitor dolor. Vestibulum nec viverra dolor. Maecenas nec consectetur tortor, ut pretium lacus. Nunc lobortis, magna congue ornare euismod, turpis massa dignissim erat, eu condimentum nunc lectus id ipsum. Duis quis placerat quam, ut pellentesque lorem. Duis non tincidunt nisi, elementum hendrerit justo. Pellentesque rutrum erat at erat varius, pretium porttitor lorem rhoncus. Integer ut ipsum interdum, tincidunt nulla at, varius mi. Aliquam vel viverra ipsum. In est leo, convallis vel diam sit amet, tempor tempus urna. Etiam sed vulputate libero. Vestibulum augue mi, luctus sed odio eu, viverra auctor erat. Pellentesque fringilla luctus felis, ut malesuada odio scelerisque non.
 				<br><br>
 				Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
-			</div>
-
-			<div class="gs-footer">
-				<div class="left">Copyright © 2014-2015 <b>g Enterprise</b>. All rights reserved.</div>
-				<div class="right">Versão 1.0</div>
 			</div>
 		</div>
 		<script src="js/jquery-1.11.3.min.js"></script>

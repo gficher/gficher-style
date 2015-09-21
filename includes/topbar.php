@@ -8,7 +8,7 @@ if (isset($var)) {
 	<div id="gs-tusername">Gustavo Ficher Catarino</div>
 	<div id="gs-tusersub">SQNOT - 2015</div>
 </div>
-<a id="gs-topnotify" class="new" href="#"></a>
+<a id="gs-topnotify" class="new"></a>
 <?php
 }
 ?>

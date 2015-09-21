@@ -10,7 +10,7 @@ function ModalOpen( $modalName ) {
 			} else {
 				$("[data-mname='"+$modalName+"']").css('top','10px').css('opacity','1');
 			}
-			
+
 			$("body").css('overflow','hidden');
 		}, 1);
 	}
@@ -26,7 +26,7 @@ $("[data-mfunc='close']").click(function () {
 		$closeVar.closest("[data-mname]").css('display','none');
 		$(".gs-modal-fade").css('display','none');
 	}, 100);
-	
+
 	$("body").css('overflow','auto');
 });
 
@@ -93,9 +93,13 @@ $(".gs-pnumber").click(function (){
 });
 
 var menuStatus = false;
+var notificationStatus = false;
 
 $("#gs-menuicon").click(function (){
-	if (menuStatus == true) {
+	if ((notificationStatus) && ($("#gs-menuicon").css('display') != 'none'))
+		$("#gs-topnotify").click();
+	
+	if (menuStatus) {
 		$("#sidemenu").css('left','-100%');
 		menuStatus = false;
 	} else {
@@ -104,15 +108,44 @@ $("#gs-menuicon").click(function (){
 	}
 });
 
+$("#gs-topnotify").click(function (){
+	if ((menuStatus) && ($("#gs-menuicon").css('display') != 'none'))
+		$("#gs-menuicon").click();
+	
+	$("#gs-notification-box").css('left','').css('right','');
+
+	if (notificationStatus) {
+		if ($("#gs-menuicon").css('display') == 'none') {
+			$("#gs-notification-box").css('right','-250px');
+		} else {
+			$("#gs-notification-box").css('left','100%');
+		}
+		notificationStatus = false;
+	} else {
+		if ($("#gs-menuicon").css('display') == 'none') {
+			$("#gs-notification-box").css('right','0');
+		} else {
+			$("#gs-notification-box").css('left','0');
+		}
+		notificationStatus = true;
+	}
+});
+
 $(window).resize(function() {
-	if (($("#gs-menuicon").css('display') == 'none')) {
+	if ($("#gs-menuicon").css('display') == 'none') {
 		menuStatus = false;
+		$("#gs-notification-box").css('right','-250px');
 	} else {
 		menuStatus = true;
+		$("#gs-notification-box").css('left','100%');
 	}
+	notificationStatus = false;
 	$("#gs-menuicon").click();
 });
 
-if (($("#gs-menuicon").css('display') != 'none')) {
+if ($("#gs-menuicon").css('display') == 'none') {
+	$("#gs-notification-box").css('right','-250px');
+} else {
 	$("canvas.gs-graph").attr('height','150');
+	$("#gs-notification-box").css('left','100%');
 }

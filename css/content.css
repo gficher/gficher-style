@@ -9,11 +9,12 @@ html, body {
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background: #444;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -355,33 +356,13 @@ table.gs-table td a {
 	max-width: 100%;
 }
 
-.gs-afooter {
-	width: calc(100% - 20px);
-	margin: auto;
-	margin-top: 20px;
-	border-top: 1px #BBB solid;
-	border-bottom: 1px #BBB solid;
-	padding: 10px;
-	background: #FFF;
-	font-family: 'Open Sans';
-	font-size: 14px;
-	display: inline-block;
-	float: left;
-	
-	position: relative;
-}
-
-.gs-footer .left {
-	float: left;
-}
-
-.gs-footer .right {
-	float: right;
-}
-
 /* MOBILE */                                                                                               /* MOBILE */
 
 @media only screen and (max-width: 800px) {
+	html, body {
+		overflow-x: hidden;
+	}
+	
 	#content #box {
 		width: 95%;
 	}
@@ -397,6 +378,8 @@ table.gs-table td a {
 	#content {
 		margin-left: 0;
 		width: 100%;
+		height: calc(100% - 60px);
+		margin-top: 60px;
 	}
 	
 	#gs-menuicon {
@@ -565,11 +548,7 @@ table.gs-table td a {
 		margin-bottom: 20px;
 	}
 	
-	.gs-modal-content .footer .left {
-		float: none;
-	}
-	
-	.gs-modal-content .footer .right {
-		float: none;
+	#gs-notification-box {
+		width: 100%;
 	}
 }
