@@ -63,9 +63,8 @@ html, body {
 #content #box form input[type="submit"] {
 	height: 40px;
 	margin: none;
-	margin-top: 20px;
 	width: 200px;
-
+	margin-top: 20px;
 	font-size: 18px;
 }
 
@@ -79,7 +78,7 @@ html, body {
 	color: #999;
 	display: block;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-bottom: 10px;
 	font-size: 15px;
 	transition: .1s;
@@ -96,10 +95,11 @@ html, body {
 	right: 10px;
 	margin-right: 10px;
 	font-family: 'Open Sans';
+	color: #FFF;
 }
 
 #fright a {
-	color: black;
+	color: #FFF;
 }
 
 @media (max-width: 400px) {

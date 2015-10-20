@@ -11,7 +11,7 @@ function ModalOpen( $modalName ) {
 				$("[data-mname='"+$modalName+"']").css('top','10px').css('opacity','1');
 			}
 
-			$("body").css('overflow','hidden');
+			$('body').css('overflow', 'hidden');
 		}, 1);
 	}
 }
@@ -27,7 +27,7 @@ $("[data-mfunc='close']").click(function () {
 		$(".gs-modal-fade").css('display','none');
 	}, 100);
 
-	$("body").css('overflow','auto');
+	$('body').css('overflow', 'auto');
 });
 
 $("[data-openmodal]").click(function () {
@@ -149,3 +149,12 @@ if ($("#gs-menuicon").css('display') == 'none') {
 	$("canvas.gs-graph").attr('height','150');
 	$("#gs-notification-box").css('left','100%');
 }
+
+$(".gs-cbigbox.tab ul.gs-tab-nav li:not(.active)").click(function (){
+	$(this).closest(".gs-cbigbox.tab").find("div.active").removeClass("active");
+	$(this).closest(".gs-cbigbox.tab").find("li.active").removeClass("active");
+	$(this).addClass("active");
+	$(this).closest(".gs-cbigbox.tab").find($("#" + $(this).attr("data-ref"))).addClass("active");
+});
+
+$(".gs-cbigbox.tab ul.gs-tab-nav li:first-child").click();

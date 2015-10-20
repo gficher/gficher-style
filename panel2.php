@@ -11,6 +11,10 @@ $var = 1; // Define o menu
 		<meta name="description" content="gficher's style"/>
 		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<meta name="msapplication-TileColor" content="#123456"/>
+		<meta name="msapplication-square150x150logo" content="square.png"/>
+		
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
@@ -28,8 +32,29 @@ $var = 1; // Define o menu
 			<?php include_once('includes/menu.php'); ?>
 		</div>
 
+		<div id="gs-notification-box">
+			<ul>
+				<li>
+					Notificação 1
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 2
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 3
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 4
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+		</div>
+		
 		<div id="content">
 			<div class="gs-ptitle">
+				<span class="gs-titleIcon fa fa-desktop"></span>
 				<div class="gs-pttext">Pré visualização</div>
 				<ul class="gs-breadcrumb">
 					<li>

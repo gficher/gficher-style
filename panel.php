@@ -11,6 +11,10 @@ $var = 1; // Define o menu
 		<meta name="description" content="gficher's style"/>
 		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<meta name="msapplication-TileColor" content="#123456"/>
+		<meta name="msapplication-square150x150logo" content="square.png"/>
+
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
@@ -172,16 +176,17 @@ $var = 1; // Define o menu
 			</ul>
 		</div>
 
+
+		<!-- THE CONTENT STARTS HERE -->
+
+
 		<div id="content">
 			<div class="gs-ptitle">
-				<div class="gs-pttext">Cartilha geral</div>
+				<span class="gs-titleIcon fa fa-archive"></span>
+				<span class="gs-pttext">Cartilha geral</span>
 				<ul class="gs-breadcrumb">
-					<li>
-						<a href="#">Geral</a>
-					</li>
-					<li>
-						<a href="#">Administrador</a>
-					</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Administrador</a></li>
 					<li>Cartilha geral</li>
 				</ul>
 				<div style="clear: both;"></div>
@@ -210,6 +215,54 @@ $var = 1; // Define o menu
 					<div class="gs-info warning">Na média</div>
 				</div>
 			</div>	
+
+			<div class="gs-cbigbox tab">
+				<ul class="gs-tab-nav">
+					<li data-ref="tabs-1">Nunc tincidunt</li>
+					<li data-ref="tabs-2">Proin dolor</li>
+					<li data-ref="tabs-3">Aenean lacinia</li>
+				</ul>
+
+				<div class="gs-tab-content">
+					<div id="tabs-1">
+						<h1>Bloco 1</h1>
+						<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+					</div>
+					<div id="tabs-2">
+						<h1>Bloco 2</h1>
+						<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-3">
+						<h1>Bloco 3</h1>
+						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+						<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="gs-cbigbox tab">
+				<ul class="gs-tab-nav">
+					<li data-ref="tabs-1">Nunc tincidunt</li>
+					<li data-ref="tabs-2">Proin dolor</li>
+					<li data-ref="tabs-3">Aenean lacinia</li>
+				</ul>
+
+				<div class="gs-tab-content">
+					<div id="tabs-1">
+						<h1>Bloco 1</h1>
+						<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+					</div>
+					<div id="tabs-2">
+						<h1>Bloco 2</h1>
+						<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-3">
+						<h1>Bloco 3</h1>
+						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+						<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+					</div>
+				</div>
+			</div>
 
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Blocos de alerta<div class="gs-bsubtitle">Criados por um gatilho</div></div>
@@ -350,8 +403,8 @@ $var = 1; // Define o menu
 							</td>
 						</tr>
 						<?php
-for ($i = 0; $i < 0; $i++) {
-	echo '
+						for ($i = 0; $i < 0; $i++) {
+							echo '
 						<tr>
 							<td><a href="" title="">Eu criei tudo isso aqui</a></td>
 							<td>Gustavo Ficher</td>
@@ -382,7 +435,7 @@ for ($i = 0; $i < 0; $i++) {
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
 						</tr>';
-}
+						}
 						?>
 					</tbody>
 				</table>
@@ -399,7 +452,11 @@ for ($i = 0; $i < 0; $i++) {
 
 					<label class="gs-flabel">
 						<b>Data</b>
-						<input class="gs-ftext" type="text" name="fdata" id="fdata" placeholder="dd/mm/yyyy">
+						<input class="gs-ftext" type="text" name="inputdata" id="inputdata" placeholder="dd/mm/yyyy">
+					</label>
+					<label class="gs-flabel">
+						<b>Telefone</b>
+						<input class="gs-ftext" type="text" name="maskedinput" id="phoneNumber" placeholder="(xx) x xxxx-xxxx">
 					</label>
 
 					<hr class="gs-hr">
@@ -490,24 +547,6 @@ for ($i = 0; $i < 0; $i++) {
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
-						<b>Teste</b>
-						<div class="gs-prefix-group">
-							<span class="gs-addon">R$</span>
-							<input class="gs-ftext" type="text" name="username" id="username">
-						</div>
-					</label>
-
-					<label class="gs-flabel">
-						<b>Teste 2</b>
-						<div class="gs-prefix-group">
-							<input class="gs-ftext" type="text" name="username" id="username">
-							<span class="gs-addon">.00</span>
-						</div>
-					</label>
-
-					<hr class="gs-hr">
-
-					<label class="gs-flabel">
 						<b>Campo</b>
 						<input class="gs-ftext" type="text" name="username" id="username" disabled placeholder="Endereço">
 					</label>
@@ -520,7 +559,7 @@ for ($i = 0; $i < 0; $i++) {
 
 					<label class="gs-flabel ">
 						<b>Nome</b>
-						<input class="gs-ftext display" type="text" name="username" id="username" value="Gustavo Ficher Catarino" readonly>
+						<input class="gs-ftext display" type="text" name="username" id="username" value="Gustavo Ficher" readonly>
 					</label>
 					<label class="gs-flabel">
 						<b>RG</b>
@@ -555,11 +594,11 @@ for ($i = 0; $i < 0; $i++) {
 					</label>
 					<label class="gs-flabel">
 						<b>Big</b>
-						<input class="gs-ftext big" type="text" name="username" id="username" value="Gustavo Ficher Catarino">
+						<input class="gs-ftext big" type="text" name="username" id="username" value="Gustavo Ficher">
 					</label>
 					<label class="gs-flabel">
 						<b>Giant</b>
-						<input class="gs-ftext giant" type="text" name="username" id="username" value="Gustavo Ficher Catarino - e ainda sobra muito espaço :)">
+						<input class="gs-ftext giant" type="text" name="username" id="username" value="Gustavo Ficher - e ainda sobra muito espaço :)">
 					</label>
 
 					<hr class="gs-hr">
@@ -604,6 +643,21 @@ for ($i = 0; $i < 0; $i++) {
 						<b>Alternativa 2</b>
 						<select class="gs-fselect autosize" name="select" id="select">
 							<optgroup label="Letras">
+								<option value="a" selected="selected">A</option>
+								<option value="b">B</option>
+								<option value="c">C</option>
+								<option value="d">D</option>
+								<option value="e">E</option>
+							</optgroup>
+							<optgroup label="Opções">
+								<option value="r">Rasurada</option>
+								<option value="v">Em branco</option>
+							</optgroup>
+						</select>
+					</label>
+					<label class="gs-flabel">
+						<select class="gs-fselect autosize" name="select" id="select">
+							<optgroup label="Alternativa">
 								<option value="a" selected="selected">A</option>
 								<option value="b">B</option>
 								<option value="c">C</option>
@@ -714,11 +768,15 @@ for ($i = 0; $i < 0; $i++) {
 
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de texto</div>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in lorem bibendum, dapibus odio vel, condimentum leo. Morbi sit amet neque vitae dolor feugiat aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut sed placerat leo, ac dignissim sem. Ut nec volutpat urna. Praesent non massa ligula. Aenean vel venenatis quam. Fusce pretium diam elit, eget ultricies odio maximus sed. Aliquam in iaculis ante, porttitor molestie odio. Mauris at egestas velit, non commodo justo. Nulla blandit porta metus vel feugiat. Quisque fringilla fringilla bibendum. Aenean non fermentum justo. Praesent eget sapien nulla. Nam tristique, leo nec consequat sollicitudin, nunc neque imperdiet nulla, et pulvinar diam nisl a arcu.
-				<br><br>
-				Donec id elementum nisl, nec porttitor dolor. Vestibulum nec viverra dolor. Maecenas nec consectetur tortor, ut pretium lacus. Nunc lobortis, magna congue ornare euismod, turpis massa dignissim erat, eu condimentum nunc lectus id ipsum. Duis quis placerat quam, ut pellentesque lorem. Duis non tincidunt nisi, elementum hendrerit justo. Pellentesque rutrum erat at erat varius, pretium porttitor lorem rhoncus. Integer ut ipsum interdum, tincidunt nulla at, varius mi. Aliquam vel viverra ipsum. In est leo, convallis vel diam sit amet, tempor tempus urna. Etiam sed vulputate libero. Vestibulum augue mi, luctus sed odio eu, viverra auctor erat. Pellentesque fringilla luctus felis, ut malesuada odio scelerisque non.
-				<br><br>
-				Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in lorem bibendum, dapibus odio vel, condimentum leo. Morbi sit amet neque vitae dolor feugiat aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut sed placerat leo, ac dignissim sem. Ut nec volutpat urna. Praesent non massa ligula. Aenean vel venenatis quam. Fusce pretium diam elit, eget ultricies odio maximus sed. Aliquam in iaculis ante, porttitor molestie odio. Mauris at egestas velit, non commodo justo. Nulla blandit porta metus vel feugiat. Quisque fringilla fringilla bibendum. Aenean non fermentum justo. Praesent eget sapien nulla. Nam tristique, leo nec consequat sollicitudin, nunc neque imperdiet nulla, et pulvinar diam nisl a arcu.
+				</p>
+				<p>
+					Donec id elementum nisl, nec porttitor dolor. Vestibulum nec viverra dolor. Maecenas nec consectetur tortor, ut pretium lacus. Nunc lobortis, magna congue ornare euismod, turpis massa dignissim erat, eu condimentum nunc lectus id ipsum. Duis quis placerat quam, ut pellentesque lorem. Duis non tincidunt nisi, elementum hendrerit justo. Pellentesque rutrum erat at erat varius, pretium porttitor lorem rhoncus. Integer ut ipsum interdum, tincidunt nulla at, varius mi. Aliquam vel viverra ipsum. In est leo, convallis vel diam sit amet, tempor tempus urna. Etiam sed vulputate libero. Vestibulum augue mi, luctus sed odio eu, viverra auctor erat. Pellentesque fringilla luctus felis, ut malesuada odio scelerisque non.
+				</p>
+				<p>
+					Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
+				</p>
 			</div>
 		</div>
 		<script src="js/jquery-1.11.3.min.js"></script>
@@ -726,6 +784,8 @@ for ($i = 0; $i < 0; $i++) {
 		<script src="js/chart.min.js"></script>
 		<script src="js/moment.js"></script>
 		<script src="js/pikaday.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script src="js/pace.min.js"></script>
 		<script type="text/javascript">
 			var cadastrosData = {
 				labels : ['Simulado 1','Simulado 2','Simulado 3','Simulado 4','Simulado 5','Simulado 6','Simulado 7'],
@@ -765,7 +825,7 @@ for ($i = 0; $i < 0; $i++) {
 			}
 
 			var picker = new Pikaday({
-				field: $('#fdata')[0],
+				field: $('#inputdata')[0],
 				format: 'DD/MM/YYYY',
 			});
 
@@ -775,6 +835,8 @@ for ($i = 0; $i < 0; $i++) {
 				$("#pb03").css('width', Math.floor(Math.random() * 101) + '%');
 				setTimeout(mudaPbar, 1000);
 			}
+
+			$("#phoneNumber").mask("(99) 9999-9999?9");
 
 			//mudaPbar();
 		</script>
