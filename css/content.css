@@ -243,6 +243,25 @@ body {
 	cursor: pointer;
 }
 
+/* PILLS */
+#content .gs-cbigbox.tab.pills ul.gs-tab-nav {
+	border-bottom: 0;
+}
+
+#content .gs-cbigbox.tab.pills ul.gs-tab-nav li {
+	border-radius: 5px;
+	border: 1px solid #AAA;
+	padding: 8px;
+}
+
+#content .gs-cbigbox.tab.pills ul.gs-tab-nav li.active {
+	border: 1px solid transparent;
+	background: #1A1827;
+	color: #FFF;
+	transition: .1s;
+}
+/* PILLS END */
+
 #content .gs-cbigbox.tab .gs-tab-content h1 {
 	margin: 0;
 	margin-top: 10px;
@@ -631,5 +650,45 @@ table.gs-table td a {
 	
 	#gs-notification-box {
 		width: 100%;
+	}
+	
+	#content .gs-cbigbox.tab ul.gs-tab-nav {
+		display: block;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		margin-top: 15px;
+		border-bottom: 0;
+	}
+
+	#content .gs-cbigbox.tab ul.gs-tab-nav li {
+		display: block;
+		padding: 10px;
+		border-radius: 0;
+		text-decoration: none;
+		color: #228;
+		cursor: default;
+		border-bottom: 1px solid #AAA;
+		font-size: 19px;
+	}
+
+	#content .gs-cbigbox.tab ul.gs-tab-nav li.active {
+		border: none;
+		background: #1A1827;
+		color: #FFF;
+		transition: .0;
+	}
+	
+	#content .gs-cbigbox.tab.pills ul.gs-tab-nav li {
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid #AAA;
+	}
+	
+	#content .gs-cbigbox.tab.pills ul.gs-tab-nav li.active {
+		border: none;
+		background: #1A1827;
+		color: #FFF;
+		transition: 0;
 	}
 }
