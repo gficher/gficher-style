@@ -6,11 +6,11 @@
 	top: 60px;
 	height: calc(100% - 60px);
 	width: 250px;
-	background: #1E1E1E;
+	background: #191919;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 	z-index: 5;
-	transition: .3s;
+	transition: background-color .1s, color .1s, border-left .1s, left .3s;
 }
 
 .gs-sidemenu ul {
@@ -20,30 +20,29 @@
 }
 
 .gs-sidemenu ul li {
-	height: 50px;
-	border-bottom: 1px solid #333;
+	height: 45px;
+	border-bottom: 1px solid #202020;
 }
 
 .gs-sidemenu ul li a {
-	color: #666;
+	color: #777;
 	text-decoration: none;
-	height: 50px;
-	line-height: 50px;
+	height: 100%;
+	line-height: 45px;
 	display: block;
 	padding-left: 20px;
 	font-family: 'Open Sans';
 	font-size: 15px;
-	transition: .2s;
-	background-size: 20px;
-	font-weight: bold;
+	transition: .1s;
+	/font-weight: bold;
 	outline: none;
+	border-left: 5px solid transparent;
 }
 
 .gs-sidemenu ul li a[href]:hover {
-	background-color: #3B3B3B;
-	padding-left: 40px;
+	background-color: #131313;
 	color: #FFF;
-	border-left: 5px solid #29273F;
+	border-left: 5px solid #403D63;
 }
 
 .gs-sidemenu ul li.separator {
@@ -58,41 +57,13 @@
 }
 
 .gs-sidemenu ul li.separator a.icon:before {
-	font-size: 20px;
+	font-size: 16px;
 	margin-right: 15px;
 }
 
 .gs-sidemenu ul li a.icon:before {
 	font-family: 'FontAwesome';
-	font-size: 25px;
+	font-size: 20px;
 	margin-right: 20px;
 	font-weight: normal;
-}
-
-.gs-sidemenu ul li a.home:before {
-	content: '\f015';
-}
-
-.gs-sidemenu ul li a.user:before {
-	content: '\f007';
-}
-
-.gs-sidemenu ul li a.test:before {
-	content: '\f0f6';
-}
-
-.gs-sidemenu ul li a.calendar:before {
-	content: '\f073';
-}
-
-.gs-sidemenu ul li a.newspaper:before {
-	content: '\f1ea';
-}
-
-.gs-sidemenu ul li a.book:before {
-	content: '\f02d';
-}
-
-.gs-sidemenu ul li a.user-secret:before {
-	content: '\f21b';
 }

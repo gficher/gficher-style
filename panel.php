@@ -11,6 +11,10 @@ $var = 1; // Define o menu
 		<meta name="description" content="gficher's style"/>
 		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<meta name="msapplication-TileColor" content="#123456"/>
+		<meta name="msapplication-square150x150logo" content="square.png"/>
+
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
@@ -49,7 +53,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content noclose large" data-mname="modalLorem">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -69,7 +73,7 @@ $var = 1; // Define o menu
 					<p>3.5. Criar uma falsa identidade (incluindo declarar uma idade falsa), ou fingir ser qualquer pessoa ou entidade, para enganar outros ou para qualquer outro propósito é proibido.</p>
 
 					<p>3.6. O ServerFDA não tem obrigação de monitorar as informações postadas por usuários. Contudo, nos reservamos o direito de revisar materiais postados e remover qualquer material sem prévia notificação. O ServerFDA se reserva o direito de temporariamente ou permanentemente cancelar o seu acesso a qualquer momento, em caso de violação do presente Termos e Condições.</p>
-					
+
 					<p>5. PRIVACIDADE.</p>
 
 					<p>5.1. Qualquer informação pessoal que você forneça sobre você mesmo ao ServerFDA, somente será usada em conformidade com nossa Política de Privacidade. Através da apresentação de informações pessoais ao ServerFDA, você concorda com a divulgação das referidas informações pessoais para os propósitos para os quais você submeteu a informação, em conformidade com nossa política de privacidade. Caso você não concorde com nossa política de privacidade, por favor, não submeta nenhuma informação pessoal ou contate nossa equipe. Por favor, esteja ciente de que a política de privacidade não se aplica a websites ou outro conteúdo ou material operado ou fornecido por terceiros.</p>
@@ -84,7 +88,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content danger" data-mname="modal2">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -103,7 +107,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content warning small" data-mname="modal3">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -119,7 +123,7 @@ $var = 1; // Define o menu
 					<div style="clear: both;"></div>
 				</div>
 			</div>
-			
+
 			<div class="gs-modal-content success" data-mname="modal4">
 				<div class="header">
 					<button type="button" class="close" data-mfunc="close"></button>
@@ -139,17 +143,50 @@ $var = 1; // Define o menu
 
 		</div> <!-- OVERLAY END -->
 
+		<div id="gs-notification-box">
+			<ul>
+				<li>
+					Notificação 1
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 2
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 3
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 4
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+				<li>Overflow<div class="info">Notificação para gerar overflow</div></li>
+			</ul>
+		</div>
+
+
+		<!-- THE CONTENT STARTS HERE -->
+
+
 		<div id="content">
-			<div class="ptitle">
-				<div class="apicon"></div>
-				<div class="pttext">Cartilha geral</div>
-				<ul class="breadcrumb">
-					<li>
-						<a href="#">Geral</a>
-					</li>
-					<li>
-						<a href="#">Administrador</a>
-					</li>
+			<div class="gs-ptitle">
+				<span class="gs-titleIcon fa fa-archive"></span>
+				<span class="gs-pttext">Cartilha geral</span>
+				<ul class="gs-breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Administrador</a></li>
 					<li>Cartilha geral</li>
 				</ul>
 				<div style="clear: both;"></div>
@@ -160,6 +197,21 @@ $var = 1; // Define o menu
 			<div class="gs-messagebox warning"><b>Alerta!</b> O arquivo foi salvo mas possui erros</div>
 			<div class="gs-messagebox danger"><b>Erro!</b> O arquivo não foi salvo.</div>
 
+			<div class="gs-cbigbox tilebox">
+				<div class="gs-tile">
+					<div>Título</div>
+					<div class="gs-info">Informações</div>
+				</div>
+				<div class="gs-tile">
+					<div>Porcentagem</div>
+					<div class="gs-info success">95%</div>
+				</div>
+				<div class="gs-tile">
+					<div>Uso de dados</div>
+					<div class="gs-info danger">8001 TB</div>
+				</div>
+			</div>		
+		
 			<div class="gs-cbigbox tilebox big">
 				<div class="gs-tile">
 					<div>Próximo simulado</div>
@@ -179,6 +231,52 @@ $var = 1; // Define o menu
 				</div>
 			</div>	
 
+			<div class="gs-cbigbox tab">
+				<ul class="gs-tab-nav">
+					<li data-ref="tabs-1">Nunc tincidunt</li>
+					<li data-ref="tabs-2">Proin dolor</li>
+					<li data-ref="tabs-3">Aenean lacinia</li>
+				</ul>
+
+				<div class="gs-tab-content">
+					<div id="tabs-1">
+						<h1>Bloco 1</h1>
+						<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+					</div>
+					<div id="tabs-2">
+						<h1>Bloco 2</h1>
+						<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-3">
+						<h1>Bloco 3</h1>
+						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="gs-cbigbox tab pills">
+				<ul class="gs-tab-nav">
+					<li data-ref="tabs-4">Nunc tincidunt</li>
+					<li data-ref="tabs-5">Proin dolor</li>
+					<li data-ref="tabs-6">Aenean lacinia</li>
+				</ul>
+
+				<div class="gs-tab-content">
+					<div id="tabs-4">
+						<h1>Bloco 1 Pills</h1>
+						<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+					</div>
+					<div id="tabs-5">
+						<h1>Bloco 2 Pills</h1>
+						<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-6">
+						<h1>Bloco 3 Pills</h1>
+						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					</div>
+				</div>
+			</div>
+
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Blocos de alerta<div class="gs-bsubtitle">Criados por um gatilho</div></div>
 				<input class="gs-btn" type="submit" name="button" id="button" value="Normal" data-openmodal="modal1">
@@ -188,7 +286,7 @@ $var = 1; // Define o menu
 				<input class="gs-btn" type="submit" name="button" id="button" value="Termos e condições" data-openmodal="modalLorem">
 			</div>
 
-			<div class="gs-cbigbox">
+			<div class="gs-cbigbox half">
 				<div class="gs-btitle">Informações<div class="gs-bsubtitle">Informações básicas para acesso</div></div>
 				Texto antes da lista
 				<ul class="gs-infolist">
@@ -200,22 +298,22 @@ $var = 1; // Define o menu
 				</ul>
 				O texto pode ser continuado aqui
 			</div>
-			
-			<div class="gs-cbigbox">
+
+			<div class="gs-cbigbox half">
 				<div class="gs-btitle">Barra de progresso<div class="gs-bsubtitle">Com animação :)</div></div>
-				
+
 				<div class="progressbar small">
 					<div class="pbprogress" data-value="25" id="pb01"></div>
 				</div>
-				
+
 				<div class="progressbar">
 					<div class="pbprogress warning" data-value="25" id="pb02"></div>
 				</div>
-				
+
 				<div class="progressbar big">
 					<div class="pbprogress danger" data-value="25" id="pb03"></div>
 				</div>
-				
+
 				<div class="progressbar">
 					<div class="pbprogress" data-value="20" id="pb04"></div>
 					<div class="pbprogress warning" data-value="20" id="pb05"></div>
@@ -240,7 +338,7 @@ $var = 1; // Define o menu
 						<tr>
 							<th>Título</th>
 							<th>Enviado por</th>
-									
+
 							<th>Prioridade</th>
 							<th>Data</th>
 							<th>Opções</th>
@@ -318,8 +416,8 @@ $var = 1; // Define o menu
 							</td>
 						</tr>
 						<?php
-for ($i = 0; $i < 0; $i++) {
-	echo '
+						for ($i = 0; $i < 0; $i++) {
+							echo '
 						<tr>
 							<td><a href="" title="">Eu criei tudo isso aqui</a></td>
 							<td>Gustavo Ficher</td>
@@ -350,7 +448,7 @@ for ($i = 0; $i < 0; $i++) {
 							<td>Normal</td>
 							<td>21/04/1999 às 03:00 PM</td>
 						</tr>';
-}
+						}
 						?>
 					</tbody>
 				</table>
@@ -367,7 +465,11 @@ for ($i = 0; $i < 0; $i++) {
 
 					<label class="gs-flabel">
 						<b>Data</b>
-						<input class="gs-ftext" type="text" name="fdata" id="fdata" placeholder="dd/mm/yyyy">
+						<input class="gs-ftext" type="text" name="inputdata" id="inputdata" placeholder="dd/mm/yyyy">
+					</label>
+					<label class="gs-flabel">
+						<b>Telefone</b>
+						<input class="gs-ftext" type="text" name="maskedinput" id="phoneNumber" placeholder="(xx) x xxxx-xxxx">
 					</label>
 
 					<hr class="gs-hr">
@@ -453,26 +555,8 @@ for ($i = 0; $i < 0; $i++) {
 							<span class="gs-addon right">batatas</span>
 						</div>
 					</label>
-					
-					<a name="top"></a>
-					<hr class="gs-hr">
-					
-					<label class="gs-flabel">
-						<b>Teste</b>
-						<div class="gs-prefix-group">
-							<span class="gs-addon">R$</span>
-							<input class="gs-ftext" type="text" name="username" id="username">
-						</div>
-					</label>
-					
-					<label class="gs-flabel">
-						<b>Teste 2</b>
-						<div class="gs-prefix-group">
-							<input class="gs-ftext" type="text" name="username" id="username">
-							<span class="gs-addon">.00</span>
-						</div>
-					</label>
 
+					<a name="top"></a>
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
@@ -488,7 +572,7 @@ for ($i = 0; $i < 0; $i++) {
 
 					<label class="gs-flabel ">
 						<b>Nome</b>
-						<input class="gs-ftext display" type="text" name="username" id="username" value="Gustavo Ficher Catarino" readonly>
+						<input class="gs-ftext display" type="text" name="username" id="username" value="Gustavo Ficher" readonly>
 					</label>
 					<label class="gs-flabel">
 						<b>RG</b>
@@ -523,24 +607,15 @@ for ($i = 0; $i < 0; $i++) {
 					</label>
 					<label class="gs-flabel">
 						<b>Big</b>
-						<input class="gs-ftext big" type="text" name="username" id="username" value="Gustavo Ficher Catarino">
+						<input class="gs-ftext big" type="text" name="username" id="username" value="Gustavo Ficher">
 					</label>
 					<label class="gs-flabel">
 						<b>Giant</b>
-						<input class="gs-ftext giant" type="text" name="username" id="username" value="Gustavo Ficher Catarino - e ainda sobra muito espaço :)">
+						<input class="gs-ftext giant" type="text" name="username" id="username" value="Gustavo Ficher - e ainda sobra muito espaço :)">
 					</label>
 
 					<hr class="gs-hr">
 
-					<label class="gs-flabel">
-						<input class="gs-ftext fuser" type="text" name="username" id="username" placeholder="Usuário">
-					</label>
-					<label class="gs-flabel">
-						<input class="gs-ftext fpass" type="password" name="password" id="password" placeholder="Senha">
-					</label>
-
-					<hr class="gs-hr">
-					
 					<label class="gs-flabel">
 						<b>Usuário</b>
 						<div class="gs-prefix-group">
@@ -548,7 +623,7 @@ for ($i = 0; $i < 0; $i++) {
 							<input class="gs-ftext" type="text" name="username" id="username" placeholder="Usuário">
 						</div>
 					</label>
-					
+
 					<label class="gs-flabel">
 						<b>Senha</b>
 						<div class="gs-prefix-group">
@@ -556,9 +631,9 @@ for ($i = 0; $i < 0; $i++) {
 							<input class="gs-ftext" type="password" name="username" id="username" placeholder="Senha">
 						</div>
 					</label>
-					
+
 					<input class="gs-btn" type="submit" name="button" id="button" value="Entrar">
-					
+
 					<hr class="gs-hr">
 
 					<label class="gs-flabel">
@@ -581,6 +656,21 @@ for ($i = 0; $i < 0; $i++) {
 						<b>Alternativa 2</b>
 						<select class="gs-fselect autosize" name="select" id="select">
 							<optgroup label="Letras">
+								<option value="a" selected="selected">A</option>
+								<option value="b">B</option>
+								<option value="c">C</option>
+								<option value="d">D</option>
+								<option value="e">E</option>
+							</optgroup>
+							<optgroup label="Opções">
+								<option value="r">Rasurada</option>
+								<option value="v">Em branco</option>
+							</optgroup>
+						</select>
+					</label>
+					<label class="gs-flabel">
+						<select class="gs-fselect autosize" name="select" id="select">
+							<optgroup label="Alternativa">
 								<option value="a" selected="selected">A</option>
 								<option value="b">B</option>
 								<option value="c">C</option>
@@ -643,24 +733,24 @@ for ($i = 0; $i < 0; $i++) {
 							<input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">
 							Opção 2
 						</label>
+						<label>
+							<input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1" disabled>
+							Opção 2
+						</label>
 					</fieldset>
 
 					<fieldset class="gs-itemgroup">
 						<label>
 							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_0">
-							Me selecione
+							Opção 1
 						</label>
 						<label>
 							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_1">
-							Azul
+							Opção 2
 						</label>
 						<label>
-							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_2">
-							Macaco
-						</label>
-						<label>
-							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_3">
-							Pudim
+							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_2" disabled>
+							Opção 3
 						</label>
 					</fieldset>
 
@@ -691,11 +781,15 @@ for ($i = 0; $i < 0; $i++) {
 
 			<div class="gs-cbigbox">
 				<div class="gs-btitle">Teste de texto</div>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in lorem bibendum, dapibus odio vel, condimentum leo. Morbi sit amet neque vitae dolor feugiat aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut sed placerat leo, ac dignissim sem. Ut nec volutpat urna. Praesent non massa ligula. Aenean vel venenatis quam. Fusce pretium diam elit, eget ultricies odio maximus sed. Aliquam in iaculis ante, porttitor molestie odio. Mauris at egestas velit, non commodo justo. Nulla blandit porta metus vel feugiat. Quisque fringilla fringilla bibendum. Aenean non fermentum justo. Praesent eget sapien nulla. Nam tristique, leo nec consequat sollicitudin, nunc neque imperdiet nulla, et pulvinar diam nisl a arcu.
-				<br><br>
-				Donec id elementum nisl, nec porttitor dolor. Vestibulum nec viverra dolor. Maecenas nec consectetur tortor, ut pretium lacus. Nunc lobortis, magna congue ornare euismod, turpis massa dignissim erat, eu condimentum nunc lectus id ipsum. Duis quis placerat quam, ut pellentesque lorem. Duis non tincidunt nisi, elementum hendrerit justo. Pellentesque rutrum erat at erat varius, pretium porttitor lorem rhoncus. Integer ut ipsum interdum, tincidunt nulla at, varius mi. Aliquam vel viverra ipsum. In est leo, convallis vel diam sit amet, tempor tempus urna. Etiam sed vulputate libero. Vestibulum augue mi, luctus sed odio eu, viverra auctor erat. Pellentesque fringilla luctus felis, ut malesuada odio scelerisque non.
-				<br><br>
-				Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in lorem bibendum, dapibus odio vel, condimentum leo. Morbi sit amet neque vitae dolor feugiat aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut sed placerat leo, ac dignissim sem. Ut nec volutpat urna. Praesent non massa ligula. Aenean vel venenatis quam. Fusce pretium diam elit, eget ultricies odio maximus sed. Aliquam in iaculis ante, porttitor molestie odio. Mauris at egestas velit, non commodo justo. Nulla blandit porta metus vel feugiat. Quisque fringilla fringilla bibendum. Aenean non fermentum justo. Praesent eget sapien nulla. Nam tristique, leo nec consequat sollicitudin, nunc neque imperdiet nulla, et pulvinar diam nisl a arcu.
+				</p>
+				<p>
+					Donec id elementum nisl, nec porttitor dolor. Vestibulum nec viverra dolor. Maecenas nec consectetur tortor, ut pretium lacus. Nunc lobortis, magna congue ornare euismod, turpis massa dignissim erat, eu condimentum nunc lectus id ipsum. Duis quis placerat quam, ut pellentesque lorem. Duis non tincidunt nisi, elementum hendrerit justo. Pellentesque rutrum erat at erat varius, pretium porttitor lorem rhoncus. Integer ut ipsum interdum, tincidunt nulla at, varius mi. Aliquam vel viverra ipsum. In est leo, convallis vel diam sit amet, tempor tempus urna. Etiam sed vulputate libero. Vestibulum augue mi, luctus sed odio eu, viverra auctor erat. Pellentesque fringilla luctus felis, ut malesuada odio scelerisque non.
+				</p>
+				<p>
+					Nulla eu mollis sapien, vel auctor diam. Integer consequat hendrerit neque, non scelerisque lectus iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet justo efficitur, finibus augue ac, iaculis odio. Duis consequat mattis malesuada. Nulla convallis dui feugiat odio imperdiet, nec porttitor ex feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero vitae est fringilla dictum. Quisque ultrices luctus augue a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor eget nulla sit amet lacinia. Mauris lobortis malesuada accumsan. Fusce mattis tincidunt quam. Curabitur bibendum lacus hendrerit placerat ullamcorper. Nulla sollicitudin sollicitudin orci, quis pretium purus feugiat ut. Proin vehicula elit ac dictum egestas.
+				</p>
 			</div>
 		</div>
 		<script src="js/jquery-1.11.3.min.js"></script>
@@ -703,6 +797,8 @@ for ($i = 0; $i < 0; $i++) {
 		<script src="js/chart.min.js"></script>
 		<script src="js/moment.js"></script>
 		<script src="js/pikaday.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script src="js/pace.min.js"></script>
 		<script type="text/javascript">
 			var cadastrosData = {
 				labels : ['Simulado 1','Simulado 2','Simulado 3','Simulado 4','Simulado 5','Simulado 6','Simulado 7'],
@@ -742,18 +838,18 @@ for ($i = 0; $i < 0; $i++) {
 			}
 
 			var picker = new Pikaday({
-				field: $('#fdata')[0],
+				field: $('#inputdata')[0],
 				format: 'DD/MM/YYYY',
 			});
 
 			function mudaPbar() {
 				$("#pb01").css('width', Math.floor(Math.random() * 101) + '%');
-				$("#pb02").css('width', Math.floor(Math.random() * 101) + '%');
-				$("#pb03").css('width', Math.floor(Math.random() * 101) + '%');
-				setTimeout(mudaPbar, 1000);
+				setTimeout(mudaPbar, 1500);
 			}
-			
-			//mudaPbar();
+
+			$("#phoneNumber").mask("(99) 9999-9999?9");
+
+			mudaPbar();
 		</script>
 	</body>
 </html>

@@ -32,14 +32,9 @@
 						</div>
 					</label>
 					
-					<!--
-					<input class="gs-ftext fuser" type="text" name="user" id="user" placeholder="Usuário">
-					<input class="gs-ftext fpass" type="password" name="pass" id="pass" placeholder="Senha">
-					-->
-					
 					<input class="gs-btn success" type="submit" name="button" id="button" value="Entrar">
 				</form>
-				<?php if (isset($_POST['button'])) { ?><div id="errorbox">Usuário ou senha incorreta!</div><?php } ?>
+				<?php if (isset($_POST['button'])) { ?><div id="errorbox">Sistema de login não implementado!</div><?php } ?>
 				<a id="forgotpass" href="#">Esqueci minha senha</a>
 			</div>
 		</div>

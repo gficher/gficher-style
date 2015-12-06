@@ -11,12 +11,17 @@ $var = 1; // Define o menu
 		<meta name="description" content="gficher's style"/>
 		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<meta name="msapplication-TileColor" content="#123456"/>
+		<meta name="msapplication-square150x150logo" content="square.png"/>
+		
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
 		<link href='css/sidemenu.css' rel='stylesheet' type='text/css'>
 		<link href='css/content.css' rel='stylesheet' type='text/css'>
 		<link href='css/pikaday.css' rel='stylesheet' type='text/css'>
+		<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -27,21 +32,42 @@ $var = 1; // Define o menu
 			<?php include_once('includes/menu.php'); ?>
 		</div>
 
+		<div id="gs-notification-box">
+			<ul>
+				<li>
+					Notificação 1
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 2
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 3
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+				<li>
+					Notificação 4
+					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
+				</li>
+		</div>
+		
 		<div id="content">
-			<div class="ptitle">
-				<div class="picon"></div>
-				<div class="pttext">Pré visualização</div>
-				<ul class="breadcrumb">
+			<div class="gs-ptitle">
+				<span class="gs-titleIcon fa fa-desktop"></span>
+				<div class="gs-pttext">Pré visualização</div>
+				<ul class="gs-breadcrumb">
 					<li>
 						<a href="#">Geral</a>
 					</li>
 					<li>Pré visualização</li>
 				</ul>
+				<div style="clear: both;"></div>
 			</div>
 
 			<div class="gs-messagebox"><b>Bem-vindo ao Oficina do Aluno web!</b><br>Sistema: gficher's style v1 Alpha.<br>Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
 
-			<div class="gs-cbigbox tilebox big">
+			<div class="gs-cbigbox tilebox">
 				<div class="gs-tile">
 					<div>Próximo simulado</div>
 					<div class="gs-info">30/08/2015</div>
@@ -92,7 +118,6 @@ $var = 1; // Define o menu
 					</tbody>
 				</table>
 			</div>
-			
 		</div>
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/content.js"></script>
