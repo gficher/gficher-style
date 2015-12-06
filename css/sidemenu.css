@@ -10,7 +10,7 @@
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 	z-index: 5;
-	transition: .3s;
+	transition: background-color .1s, color .1s, border-left .1s, left .3s;
 }
 
 .gs-sidemenu ul {

@@ -67,7 +67,7 @@ $var = 1; // Define o menu
 
 			<div class="gs-messagebox"><b>Bem-vindo ao Oficina do Aluno web!</b><br>Sistema: gficher's style v1 Alpha.<br>Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
 
-			<div class="gs-cbigbox tilebox big">
+			<div class="gs-cbigbox tilebox">
 				<div class="gs-tile">
 					<div>Próximo simulado</div>
 					<div class="gs-info">30/08/2015</div>

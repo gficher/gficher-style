@@ -143,18 +143,19 @@ $(window).resize(function() {
 	$("#gs-menuicon").click();
 });
 
-if ($("#gs-menuicon").css('display') == 'none') {
-	$("#gs-notification-box").css('right','-250px');
-} else {
-	$("canvas.gs-graph").attr('height','150');
-	$("#gs-notification-box").css('left','100%');
-}
-
 $(".gs-cbigbox.tab ul.gs-tab-nav li:not(.active)").click(function (){
 	$(this).closest(".gs-cbigbox.tab").find("div.active").removeClass("active");
 	$(this).closest(".gs-cbigbox.tab").find("li.active").removeClass("active");
 	$(this).addClass("active");
 	$(this).closest(".gs-cbigbox.tab").find($("#" + $(this).attr("data-ref"))).addClass("active");
 });
+
+if ($("#gs-menuicon").css('display') == 'none') {
+	//$("#gs-notification-box").css('right','-250px');
+	$("#gs-notification-box").css('left','100%');
+} else {
+	$("canvas.gs-graph").attr('height','150');
+	$("#gs-notification-box").css('left','100%');
+}
 
 $(".gs-cbigbox.tab ul.gs-tab-nav li:first-child").click();

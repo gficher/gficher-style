@@ -197,6 +197,21 @@ $var = 1; // Define o menu
 			<div class="gs-messagebox warning"><b>Alerta!</b> O arquivo foi salvo mas possui erros</div>
 			<div class="gs-messagebox danger"><b>Erro!</b> O arquivo não foi salvo.</div>
 
+			<div class="gs-cbigbox tilebox">
+				<div class="gs-tile">
+					<div>Título</div>
+					<div class="gs-info">Informações</div>
+				</div>
+				<div class="gs-tile">
+					<div>Porcentagem</div>
+					<div class="gs-info success">95%</div>
+				</div>
+				<div class="gs-tile">
+					<div>Uso de dados</div>
+					<div class="gs-info danger">8001 TB</div>
+				</div>
+			</div>		
+		
 			<div class="gs-cbigbox tilebox big">
 				<div class="gs-tile">
 					<div>Próximo simulado</div>
@@ -718,24 +733,24 @@ $var = 1; // Define o menu
 							<input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">
 							Opção 2
 						</label>
+						<label>
+							<input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1" disabled>
+							Opção 2
+						</label>
 					</fieldset>
 
 					<fieldset class="gs-itemgroup">
 						<label>
 							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_0">
-							Me selecione
+							Opção 1
 						</label>
 						<label>
 							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_1">
-							Azul
+							Opção 2
 						</label>
 						<label>
-							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_2">
-							Macaco
-						</label>
-						<label>
-							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_3">
-							Pudim
+							<input type="checkbox" name="RadioGroup2" value="radio" id="RadioGroup1_2" disabled>
+							Opção 3
 						</label>
 					</fieldset>
 
@@ -829,14 +844,12 @@ $var = 1; // Define o menu
 
 			function mudaPbar() {
 				$("#pb01").css('width', Math.floor(Math.random() * 101) + '%');
-				$("#pb02").css('width', Math.floor(Math.random() * 101) + '%');
-				$("#pb03").css('width', Math.floor(Math.random() * 101) + '%');
-				setTimeout(mudaPbar, 1000);
+				setTimeout(mudaPbar, 1500);
 			}
 
 			$("#phoneNumber").mask("(99) 9999-9999?9");
 
-			//mudaPbar();
+			mudaPbar();
 		</script>
 	</body>
 </html>

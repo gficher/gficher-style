@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-
-
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
@@ -16,7 +14,7 @@
 }
 
 .pace .pace-progress {
-	background: #29d;
+	background: #29D;
 	position: fixed;
 	z-index: 2000;
 	top: 0;
@@ -24,9 +22,6 @@
 	width: 100%;
 	height: 2px;
 }
-
-
-
 
 html, body {
 	max-width: 100%;
@@ -43,21 +38,24 @@ html {
 body {
 	background: #EEE;
 }
-/*
+
+
 ::-webkit-scrollbar {
 	width: 12px;
 	height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background: #444;
 }
 
 ::-webkit-scrollbar-thumb {
 	background: #666;
 }
-*/
+
+::-webkit-scrollbar-thumb:hover {
+	background: #777;
+}
 
 #content {
 	min-height: calc(100% - 60px);
@@ -640,6 +638,10 @@ table.gs-table td a {
 	
 	.gs-addon {
 		width: 1px;
+	}
+
+	.gs-prefix-group > .gs-addon:last-child {
+		border-left: 1px solid #AAA;
 	}
 
 	.gs-modal-content {
