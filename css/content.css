@@ -137,7 +137,7 @@ body {
 	background: #FFF;
 	font-family: 'Open Sans';
 	display: inline-block;
-	float: left;
+	vertical-align: text-top;
 }
 
 #content .gs-cbigbox:last-child {

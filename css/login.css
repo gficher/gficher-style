@@ -60,6 +60,10 @@ html, body {
 	width: 150px;
 }
 
+.gs-flabel .gs-ftext:focus {
+	border-color: #FF8201;
+}
+
 #content #box form input[type="submit"] {
 	height: 40px;
 	margin: none;
@@ -78,11 +82,13 @@ html, body {
 	color: #999;
 	display: block;
 	text-align: center;
+	margin: auto;
 	margin-top: 15px;
 	margin-bottom: 10px;
 	font-size: 15px;
 	transition: .1s;
 	text-decoration: none;
+	width: 180px;
 }
 
 #content #box #forgotpass:hover {
