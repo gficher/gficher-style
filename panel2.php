@@ -11,10 +11,10 @@ $var = 1; // Define o menu
 		<meta name="description" content="gficher's style"/>
 		<meta name="keywords" content="gficher,style"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
+
 		<meta name="msapplication-TileColor" content="#123456"/>
 		<meta name="msapplication-square150x150logo" content="square.png"/>
-		
+
 		<link href='css/topbar.css' rel='stylesheet' type='text/css'>
 		<link href='css/form.css' rel='stylesheet' type='text/css'>
 		<link href='css/message.css' rel='stylesheet' type='text/css'>
@@ -25,12 +25,12 @@ $var = 1; // Define o menu
 	</head>
 
 	<body>
-		<div class="gs-topbar">
-			<?php include_once('includes/topbar.php'); ?>
-		</div>
-		<div id="sidemenu" class="gs-sidemenu">
-			<?php include_once('includes/menu.php'); ?>
-		</div>
+        <header class="gs-topbar">
+            <?php include_once('includes/topbar.php'); ?>
+        </header>
+        <nav id="sidemenu" class="gs-sidemenu">
+            <?php include_once('includes/menu.php'); ?>
+        </nav>
 
 		<div id="gs-notification-box">
 			<ul>
@@ -50,116 +50,129 @@ $var = 1; // Define o menu
 					Notificação 4
 					<div class="info">O zézinho não fez isso, mas deveria ter feito aquilo no lugar</div>
 				</li>
-		</div>
-		
-		<div id="content">
-			<div class="gs-ptitle">
-				<span class="gs-titleIcon fa fa-desktop"></span>
-				<div class="gs-pttext">Pré visualização</div>
-				<ul class="gs-breadcrumb">
-					<li>
-						<a href="#">Geral</a>
-					</li>
-					<li>Pré visualização</li>
-				</ul>
-				<div style="clear: both;"></div>
-			</div>
+				</div>
 
-			<div class="gs-messagebox"><b>Bem-vindo ao Oficina do Aluno web!</b><br>Sistema: gficher's style v1 Alpha.<br>Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
+			<div id="content">
+				<div class="gs-ptitle">
+					<span class="gs-titleIcon fa fa-desktop"></span>
+					<div class="gs-pttext">Pré visualização</div>
+					<ul class="gs-breadcrumb">
+						<li>
+							<a href="#">Geral</a>
+						</li>
+						<li>Pré visualização</li>
+					</ul>
+					<div style="clear: both;"></div>
+				</div>
 
-			<div class="gs-cbigbox tilebox">
-				<div class="gs-tile">
-					<div>Próximo simulado</div>
-					<div class="gs-info">30/08/2015</div>
+				<div class="gs-messagebox"><b>Bem-vindo ao Oficina do Aluno web!</b><br>Sistema: gficher's style v1 Alpha.<br>Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
+
+				<div class="gs-cbigbox tilebox">
+					<div class="gs-tile">
+						<div>Próximo simulado</div>
+						<div class="gs-info">30/08/2015</div>
+					</div>
+					<div class="gs-tile">
+						<div>Pesquisas</div>
+						<div class="gs-info success">OK</div>
+					</div>
+					<div class="gs-tile">
+						<div>Caderno</div>
+						<div class="gs-info danger">Regular</div>
+					</div>
+					<div class="gs-tile">
+						<div>Simulado</div>
+						<div class="gs-info warning">Na média</div>
+					</div>
 				</div>
-				<div class="gs-tile">
-					<div>Pesquisas</div>
-					<div class="gs-info success">OK</div>
+
+				<div class="gs-cbigbox twothird">
+					<div class="gs-btitle">Seu desempenho<div class="gs-bsubtitle">Notas dos simulados comparado à média geral</div></div>
+					<div class="gs-canv">
+						<canvas class="gs-graph" id="graphCadastros" height="100"></canvas>
+					</div>
 				</div>
-				<div class="gs-tile">
-					<div>Caderno</div>
-					<div class="gs-info danger">Regular</div>
+
+				<div class="gs-cbigbox onethird">
+					<div class="gs-btitle">Próximos eventos</div>
+					<table id="table1" class="gs-table" data-tpager="pager1" data-tsearch="tsearch1">
+						<thead>
+							<tr>
+								<th>Data</th>
+								<th>Evento</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>07/09/2015</td>
+								<td>Mudança geral do gficher's style</td>
+							</tr>
+							<tr>
+								<td>09/09/2015</td>
+								<td>WWDC 2015</td>
+							</tr>
+							<tr>
+								<td>09/09/2015</td>
+								<td>Simulado 6</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="gs-tile">
-					<div>Simulado</div>
-					<div class="gs-info warning">Na média</div>
+
+				<div class="gs-cbigbox">
+					<div class="gs-btitle">Jordaniano é detido ao tentar invadir cabine de avião da Lufthansa<div class="gs-bsubtitle">Aeronave fazia voo entre Frankfurt e Belgrado neste domingo (6).
+						Homem foi imobilizado por passageiros e detido pela polícia sérvia.
+						</div></div>
+					<p>
+						Um jordaniano que tentou entrar neste domingo (6) na cabine de comando de um avião da companhia alemã Lufthansa durante um voo entre Frankfurt e Belgrado foi imobilizado pelos passageiros e detido pela polícia sérvia.</p><p>
+					O jordaniano começou a bater na porta da cabine tentando entrar e ameaçando abrir as portas do avião, que voava no momento sobre a Áustria, informou a televisão nacional sérvia (RTS).</p>
+					<p>O homem, que segundo a imprensa sérvia se chama Laken e também tem um passaporte americano, gritou que havia perdido a cabeça e que queria se unir a Alá na companhia de todos os passageiros, segundo esta fonte.</p>
+					<p>O indivíduo, que agora está sendo interrogado, foi imobilizado por membros da tripulação ajudados por jogadores da equipe de handebol sérvia Vojvodina Novi Sad, que o vigiaram até o pouso, no aeroporto de Belgrado.</p>
+					<p>Não se sabe até o momento o número de passageiros a bordo e o tipo de aeronave envolvida no incidente.</p>
 				</div>
 			</div>
-			
-			<div class="gs-cbigbox half">
-				<div class="gs-btitle">Seu desempenho<div class="gs-bsubtitle">Notas dos simulados comparado à média geral</div></div>
-				<div class="gs-canv">
-					<canvas class="gs-graph" id="graphCadastros" height="100"></canvas>
-				</div>
-			</div>
-			
-			<div class="gs-cbigbox half">
-				<div class="gs-btitle">Próximos eventos</div>
-				<table id="table1" class="gs-table" data-tpager="pager1" data-tsearch="tsearch1">
-					<thead>
-						<tr>
-							<th>Data</th>
-							<th>Evento</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>07/09/2015</td>
-							<td>Mudança geral do gficher's style</td>
-						</tr>
-						<tr>
-							<td>09/09/2015</td>
-							<td>WWDC 2015</td>
-						</tr>
-						<tr>
-							<td>09/09/2015</td>
-							<td>Simulado 6</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/content.js"></script>
-		<script type="text/javascript" src="js/chart.min.js"></script>
-		<script type="text/javascript" src="js/moment.js"></script>
-		<script type="text/javascript" src="js/pikaday.js"></script>
-		<script type="text/javascript">
-			var cadastrosData = {
-				labels : ['Simulado 1','Simulado 2','Simulado 3','Simulado 4','Simulado 5','Simulado 6','Simulado 7'],
-				datasets : [
-					{
-						label: "Média geral",
-						fillColor : "rgba(220,220,220,0.2)",
-						strokeColor : "rgba(220,220,220,1)",
-						pointColor : "rgba(220,220,220,1)",
-						pointStrokeColor : "#fff",
-						pointHighlightFill : "#fff",
-						pointHighlightStroke : "rgba(220,220,220,1)",
-						data : [7,5,6,5,4,8,6]
-					},
-					{
-						label: "Sua nota",
-						fillColor : "rgba(41,39,63,.2)",
-						strokeColor : "#29273F",
-						pointColor : "#4A4774",
-						pointStrokeColor : "#29273F",
-						pointHighlightFill : "#B4B1CF",
-						pointHighlightStroke : "#29273F",
+			<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+			<script type="text/javascript" src="js/content.js"></script>
+			<script type="text/javascript" src="js/chart.min.js"></script>
+			<script type="text/javascript" src="js/moment.js"></script>
+			<script type="text/javascript" src="js/pikaday.js"></script>
+			<script type="text/javascript">
+				var cadastrosData = {
+					labels : ['Simulado 1','Simulado 2','Simulado 3','Simulado 4','Simulado 5','Simulado 6','Simulado 7'],
+					datasets : [
+						{
+							label: "Média geral",
+							fillColor : "rgba(220,220,220,0.2)",
+							strokeColor : "rgba(220,220,220,1)",
+							pointColor : "rgba(220,220,220,1)",
+							pointStrokeColor : "#fff",
+							pointHighlightFill : "#fff",
+							pointHighlightStroke : "rgba(220,220,220,1)",
+							data : [7,5,6,5,4,8,6]
+						},
+						{
+							label: "Sua nota",
+							fillColor : "rgba(41,39,63,.2)",
+							strokeColor : "#29273F",
+							pointColor : "#4A4774",
+							pointStrokeColor : "#29273F",
+							pointHighlightFill : "#B4B1CF",
+							pointHighlightStroke : "#29273F",
 
-						data : [5,9,7,2,10,3,7]
-					}
-				]
-			}
+							data : [5,9,7,2,10,3,7]
+						}
+					]
+				}
 
-			window.onload = function() {
-				var ctx = document.getElementById("graphCadastros").getContext("2d");
-				window.graphCadastros = new Chart(ctx).Line(cadastrosData, {
-					responsive: true,
-					multiTooltipTemplate: "<%=datasetLabel%>: <%= value %>",
-				});
-				
-				//window.location = '#top';
-			}
-		</script>
-	</body>
-</html>
+				window.onload = function() {
+					var ctx = document.getElementById("graphCadastros").getContext("2d");
+					window.graphCadastros = new Chart(ctx).Line(cadastrosData, {
+						responsive: true,
+						multiTooltipTemplate: "<%=datasetLabel%>: <%= value %>",
+					});
+
+					//window.location = '#top';
+				}
+			</script>
+			</body>
+		</html>

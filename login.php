@@ -21,21 +21,21 @@
 					<label class="gs-flabel">
 						<div class="gs-prefix-group">
 							<span class="gs-addon icon fa fa-user"></span>
-							<input class="gs-ftext" type="text" name="user" id="user" placeholder="Usuário">
+                            <input class="gs-ftext medium" type="text" name="user" id="user" placeholder="Usuário" title="Usuário" autofocus required>
 						</div>
 					</label>
-					
 					<label class="gs-flabel">
 						<div class="gs-prefix-group">
 							<span class="gs-addon icon fa fa-lock"></span>
-							<input class="gs-ftext" type="password" name="pass" id="pass" placeholder="Senha">
+                            <input class="gs-ftext medium" type="password" name="pass" id="pass" placeholder="Senha" title="Senha" autofocus required>
 						</div>
 					</label>
 					
 					<input class="gs-btn success" type="submit" name="button" id="button" value="Entrar">
 				</form>
-				<?php if (isset($_POST['button'])) { ?><div id="errorbox">Sistema de login não implementado!</div><?php } ?>
-				<a id="forgotpass" href="#">Esqueci minha senha</a>
+                <?php if (isset($_POST['button'])) { ?><div id="errorbox">Usuário ou senha incorreta!</div><?php } ?>
+                <a class="gs-url" href="register.php">Criar conta</a>
+                <a class="gs-url" href="forgotpass.php">Esqueci minha senha</a>
 			</div>
 		</div>
 		<div id="fright">Desenvolvido por <a href="//gficher.tk" target="_blank">gficher</a></div>
